@@ -1,0 +1,1321 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Rightsworth | Prove what your sponsorship is worth</title>
+<meta name="description" content="Independent, evidence-graded Sponsor Outcome Reports for teams, leagues, events and brands. What one partnership delivered in leads, sales and customers, delivered before the renewal meeting.">
+<meta name="theme-color" content="#071113">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://rightsworth.com/">
+<meta property="og:title" content="Rightsworth | Prove what your sponsorship is worth">
+<meta property="og:description" content="Evidence-graded Sponsor Outcome Reports. Leads, sales and customers, for any sport.">
+<meta property="og:image" content="https://rightsworth.com/og.png">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,500..900&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --night:#061012;--night-2:#0a181b;--panel:#0d1f23;--panel-2:#11292e;
+  --line:rgba(190,255,232,.10);--line-2:rgba(190,255,232,.18);
+  --green:#0f5c4c;--green-2:#14806a;--mint:#7fd1bd;--signal:#43e0b0;
+  --gA:#43e0b0;--gB:#6aa8ff;--gC:#f2c14e;--gD:#8b9ca3;
+  --paper:#f2f4ef;--paper-2:#e7ebe4;--ink:#0a1416;--ink-2:#41504f;
+  --on-dark:#eaf5f1;--on-dark-2:#9cb3ae;
+  --display:"Archivo",system-ui,sans-serif;--body:"Inter",system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;--mono:"JetBrains Mono",ui-monospace,Consolas,monospace;
+  --r:18px;--wrap:1200px;--gut:clamp(18px,4vw,40px);
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{margin:0;font-family:var(--body);background:var(--night);color:var(--on-dark);line-height:1.55;overflow-x:hidden;-webkit-font-smoothing:antialiased}
+img,svg{display:block;max-width:100%}
+a{color:inherit}
+.wrap{max-width:var(--wrap);margin:0 auto;padding:0 var(--gut)}
+.display{font-family:var(--display);font-stretch:74%;font-weight:850;text-transform:uppercase;letter-spacing:-.005em;line-height:.9;margin:0}
+.eyebrow{font-family:var(--mono);font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--mint);display:inline-flex;align-items:center;gap:10px}
+.eyebrow::before{content:"";width:22px;height:2px;background:currentColor;border-radius:2px}
+.light .eyebrow{color:var(--green)}
+.lead{font-size:clamp(17px,1.6vw,20px);color:var(--on-dark-2);max-width:62ch}
+.light .lead{color:var(--ink-2)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;padding:15px 24px;border-radius:999px;font-weight:600;font-size:15px;text-decoration:none;transition:transform .2s ease,background .2s ease,box-shadow .2s ease,border-color .2s;white-space:nowrap}
+.btn-primary{background:var(--signal);color:#04211a;box-shadow:0 10px 30px -10px rgba(67,224,176,.6)}
+.btn-primary:hover{transform:translateY(-2px);box-shadow:0 16px 40px -12px rgba(67,224,176,.75)}
+.btn-ghost{border:1px solid var(--line-2);color:var(--on-dark);background:rgba(255,255,255,.03)}
+.btn-ghost:hover{border-color:var(--mint);background:rgba(127,209,189,.08)}
+.light .btn-ghost{color:var(--ink);border-color:rgba(10,20,22,.18);background:transparent}
+.btn svg{width:16px;height:16px}
+section{position:relative}
+.sec{padding:clamp(80px,11vw,150px) 0}
+.light{background:var(--paper);color:var(--ink)}
+
+/* NAV */
+.nav{position:fixed;inset:0 0 auto 0;z-index:50;transition:background .3s,border-color .3s,backdrop-filter .3s;border-bottom:1px solid transparent}
+.nav.scrolled{background:rgba(6,16,18,.78);backdrop-filter:blur(14px) saturate(140%);-webkit-backdrop-filter:blur(14px) saturate(140%);border-color:var(--line)}
+.nav .wrap{display:flex;align-items:center;justify-content:space-between;height:72px}
+.logo{display:flex;align-items:center;gap:11px;text-decoration:none;font-family:var(--display);font-stretch:100%;font-weight:800;font-size:20px;letter-spacing:-.01em}
+.logo svg{width:32px;height:32px}
+.nav-links{display:flex;gap:30px;align-items:center}
+.nav-links a{text-decoration:none;font-size:14px;color:var(--on-dark-2);font-weight:500;transition:color .2s}
+.nav-links a:hover{color:var(--on-dark)}
+.nav .btn{padding:11px 18px;font-size:14px}
+.burger{display:none;background:none;border:1px solid var(--line-2);border-radius:12px;width:44px;height:44px;color:var(--on-dark);cursor:pointer;align-items:center;justify-content:center}
+.burger span,.burger span::before,.burger span::after{display:block;width:18px;height:2px;background:currentColor;border-radius:2px;position:relative;transition:.25s}
+.burger span::before,.burger span::after{content:"";position:absolute;left:0}
+.burger span::before{top:-6px}.burger span::after{top:6px}
+.nav.open .burger span{background:transparent}
+.nav.open .burger span::before{top:0;transform:rotate(45deg)}
+.nav.open .burger span::after{top:0;transform:rotate(-45deg)}
+.mobile-menu{display:none}
+@media(max-width:920px){
+  .nav-links{display:none}
+  .burger{display:inline-flex}
+  .nav .btn.desk{display:none}
+  .mobile-menu{display:block;position:fixed;inset:72px 0 auto 0;background:rgba(6,16,18,.97);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border-bottom:1px solid var(--line);padding:10px var(--gut) 26px;transform:translateY(-12px);opacity:0;pointer-events:none;transition:.25s}
+  .nav.open .mobile-menu{transform:none;opacity:1;pointer-events:auto}
+  .mobile-menu a:not(.btn){display:block;padding:15px 0;border-bottom:1px solid var(--line);text-decoration:none;font-family:var(--display);font-stretch:80%;font-weight:750;text-transform:uppercase;font-size:24px}
+  .mobile-menu .btn{width:100%;margin-top:20px}
+}
+
+/* HERO */
+.hero{min-height:min(100svh,960px);padding:140px 0 70px;display:flex;align-items:center;overflow:hidden;isolation:isolate}
+.hero-bg{position:absolute;inset:0;z-index:-1;pointer-events:none}
+.hero-bg .glow1{position:absolute;width:900px;height:900px;left:-300px;top:-420px;background:radial-gradient(closest-side,rgba(127,209,189,.28),transparent 70%)}
+.hero-bg .glow2{position:absolute;width:1000px;height:1000px;right:-380px;top:-460px;background:radial-gradient(closest-side,rgba(20,128,106,.42),transparent 70%)}
+.hero-bg .beam{position:absolute;top:-10%;width:60%;height:120%;background:conic-gradient(from 180deg at 50% 0%,transparent 160deg,rgba(200,255,235,.07) 175deg,rgba(200,255,235,.10) 180deg,rgba(200,255,235,.07) 185deg,transparent 200deg);filter:blur(6px);animation:sweep 11s ease-in-out infinite alternate}
+.hero-bg .beam.b1{left:-12%;transform-origin:50% 0;transform:rotate(-24deg)}
+.hero-bg .beam.b2{right:-12%;transform-origin:50% 0;transform:rotate(24deg);animation-delay:-5s}
+@keyframes sweep{from{opacity:.55}to{opacity:1}}
+.hero-bg .pitch{position:absolute;inset:auto 0 -2px 0;height:62%;opacity:.55;-webkit-mask-image:linear-gradient(to top,#000 10%,transparent 95%);mask-image:linear-gradient(to top,#000 10%,transparent 95%)}
+.hero-bg .grain{position:absolute;inset:0;opacity:.06;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E")}
+.hero-grid{display:grid;grid-template-columns:1.12fr .88fr;gap:clamp(36px,5vw,72px);align-items:center}
+.hero h1{font-size:clamp(54px,8.6vw,124px);margin:22px 0 26px}
+.hero h1 em{font-style:normal;color:transparent;-webkit-text-stroke:2px var(--mint);background:linear-gradient(90deg,var(--signal),var(--mint));-webkit-background-clip:text;background-clip:text}
+.hero .lead{margin:0 0 34px}
+.cta-row{display:flex;flex-wrap:wrap;gap:12px}
+.proof-row{display:flex;flex-wrap:wrap;gap:10px 26px;margin-top:38px;padding-top:26px;border-top:1px solid var(--line)}
+.proof-row div{display:flex;align-items:center;gap:9px;font-size:14px;color:var(--on-dark-2)}
+.proof-row svg{width:18px;height:18px;color:var(--signal);flex:none}
+
+/* DASHBOARD CARD */
+.dash{position:relative;background:linear-gradient(180deg,rgba(17,41,46,.88),rgba(10,24,27,.92));border:1px solid var(--line-2);border-radius:24px;padding:22px;box-shadow:0 40px 100px -30px rgba(0,0,0,.8),inset 0 1px 0 rgba(255,255,255,.06);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px)}
+.dash::before{content:"";position:absolute;inset:-1px;border-radius:24px;padding:1px;background:linear-gradient(140deg,rgba(67,224,176,.55),transparent 35%,transparent 70%,rgba(127,209,189,.35));-webkit-mask:linear-gradient(#000 0 0) content-box,linear-gradient(#000 0 0);-webkit-mask-composite:xor;mask-composite:exclude;pointer-events:none}
+.dash-head{display:flex;justify-content:space-between;align-items:flex-start;gap:12px;padding-bottom:16px;border-bottom:1px solid var(--line)}
+.dash-head .t{font-family:var(--mono);font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--on-dark-2)}
+.dash-head .n{font-weight:700;font-size:16px;margin-top:4px}
+.live{font-family:var(--mono);font-size:10.5px;letter-spacing:.1em;text-transform:uppercase;color:#04211a;background:var(--mint);padding:5px 9px;border-radius:999px;white-space:nowrap}
+.dash-top{display:grid;grid-template-columns:auto 1fr;gap:20px;align-items:center;padding:20px 0}
+.gauge{position:relative;width:132px;height:132px}
+.gauge svg{width:132px;height:132px;transform:rotate(-90deg)}
+.gauge .trk{stroke:rgba(255,255,255,.08)}
+.gauge .val{stroke:url(#gg);stroke-linecap:round;stroke-dasharray:339.3;stroke-dashoffset:339.3;transition:stroke-dashoffset 1.8s cubic-bezier(.2,.8,.2,1)}
+.gauge .c{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center}
+.gauge .c b{font-family:var(--display);font-stretch:80%;font-size:44px;line-height:1;font-weight:850}
+.gauge .c span{font-size:11px;color:var(--on-dark-2);font-family:var(--mono)}
+.kv .k{font-family:var(--mono);font-size:10.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--on-dark-2)}
+.kv .v{font-family:var(--display);font-stretch:80%;font-weight:850;font-size:30px;line-height:1.05;margin:3px 0 12px}
+.rec{display:inline-flex;align-items:center;gap:8px;background:rgba(67,224,176,.12);color:var(--signal);border:1px solid rgba(67,224,176,.35);padding:6px 12px;border-radius:999px;font-weight:600;font-size:13px}
+.rec i{width:7px;height:7px;border-radius:50%;background:var(--signal);box-shadow:0 0 0 4px rgba(67,224,176,.2);animation:pulse 2s infinite}
+@keyframes pulse{50%{box-shadow:0 0 0 8px rgba(67,224,176,0)}}
+.roi{padding:16px 0;border-top:1px solid var(--line)}
+.roi-row{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:10px}
+.roi-row b{font-family:var(--display);font-stretch:80%;font-size:24px;font-weight:850}
+.roi-track{position:relative;height:10px;background:rgba(255,255,255,.07);border-radius:999px}
+.roi-fill{position:absolute;top:0;bottom:0;left:65.3%;width:0;background:linear-gradient(90deg,var(--signal),var(--mint));border-radius:999px;transition:width 1.4s .5s cubic-bezier(.2,.8,.2,1);box-shadow:0 0 16px rgba(67,224,176,.6)}
+.roi-scale{display:flex;justify-content:space-between;font-family:var(--mono);font-size:10px;color:var(--on-dark-2);margin-top:7px}
+.bars{display:grid;gap:10px;padding:16px 0;border-top:1px solid var(--line)}
+.bar{display:grid;grid-template-columns:96px 1fr 76px;gap:10px;align-items:center;font-size:12.5px}
+.bar .l{color:var(--on-dark-2)}
+.bar .tr{height:8px;background:rgba(255,255,255,.06);border-radius:99px;overflow:hidden}
+.bar .f{height:100%;width:0;border-radius:99px;transition:width 1.4s cubic-bezier(.2,.8,.2,1)}
+.bar .n{text-align:right;font-family:var(--mono);font-size:12px}
+.chips{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;padding-top:16px;border-top:1px solid var(--line)}
+.chip{border:1px solid var(--line);border-radius:12px;padding:10px;text-align:left;background:rgba(255,255,255,.02)}
+.chip .g{display:inline-grid;place-items:center;width:24px;height:24px;border-radius:7px;font-weight:800;font-size:13px;color:#06201a;margin-bottom:8px}
+.chip .a{font-family:var(--mono);font-size:12px;font-weight:600}
+.chip .s{font-size:10.5px;color:var(--on-dark-2)}
+.dash-foot{font-size:11px;color:var(--on-dark-2);margin-top:14px;font-style:italic}
+.float-tag{position:absolute;left:-34px;bottom:-38px;background:var(--paper);color:var(--ink);border-radius:14px;padding:12px 14px;box-shadow:0 24px 50px -16px rgba(0,0,0,.6);display:flex;gap:10px;align-items:center;font-size:13px;font-weight:600;animation:bob 6s ease-in-out infinite}
+.float-tag .g{width:28px;height:28px;border-radius:8px;display:grid;place-items:center;background:var(--gB);color:#06142a;font-weight:800}
+.float-tag small{display:block;font-weight:500;color:var(--ink-2);font-size:11.5px}
+@keyframes bob{50%{transform:translateY(-8px)}}
+
+/* MARQUEE */
+.marquee{border-top:1px solid var(--line);border-bottom:1px solid var(--line);background:var(--night-2);overflow:hidden;padding:22px 0}
+.marquee-track{display:flex;gap:56px;width:max-content;animation:scroll 38s linear infinite}
+.marquee span{font-family:var(--display);font-stretch:75%;font-weight:800;text-transform:uppercase;font-size:clamp(22px,2.6vw,32px);color:transparent;-webkit-text-stroke:1px rgba(190,255,232,.38);display:flex;align-items:center;gap:56px;white-space:nowrap}
+.marquee span::after{content:"";width:9px;height:9px;border-radius:50%;background:var(--signal)}
+.marquee span.on{color:var(--on-dark);-webkit-text-stroke:0}
+@keyframes scroll{to{transform:translateX(-50%)}}
+
+/* PROBLEM */
+.sec-head{display:grid;grid-template-columns:1fr 1fr;gap:clamp(24px,5vw,80px);align-items:end;margin-bottom:clamp(44px,6vw,72px)}
+.sec-head h2{font-size:clamp(42px,6vw,84px)}
+.sec-head p{margin:0}
+.versus{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+.vs-card{border-radius:var(--r);padding:clamp(26px,3vw,40px);position:relative;overflow:hidden}
+.vs-card h3{font-family:var(--display);font-stretch:80%;font-weight:800;text-transform:uppercase;font-size:clamp(24px,2.4vw,30px);margin:10px 0 22px;line-height:1}
+.vs-card .tag{font-family:var(--mono);font-size:11px;letter-spacing:.12em;text-transform:uppercase}
+.vs-old{background:#fff;border:1px solid var(--paper-2)}
+.vs-old .tag{color:#8a6d1d}
+.vs-new{background:var(--ink);color:var(--on-dark)}
+.vs-new .tag{color:var(--signal)}
+.vs-new::after{content:"";position:absolute;right:-120px;top:-120px;width:320px;height:320px;background:radial-gradient(closest-side,rgba(67,224,176,.3),transparent);pointer-events:none}
+.vs-list{list-style:none;margin:0;padding:0;display:grid;gap:2px}
+.vs-list li{display:flex;justify-content:space-between;gap:16px;align-items:center;padding:14px 0;border-bottom:1px solid rgba(10,20,22,.08);font-size:15.5px}
+.vs-new .vs-list li{border-color:var(--line)}
+.vs-list li:last-child{border:0}
+.gp{font-family:var(--mono);font-size:11px;font-weight:600;padding:4px 9px;border-radius:999px;white-space:nowrap}
+.gp.A{background:rgba(67,224,176,.16);color:var(--gA)}
+.gp.B{background:rgba(106,168,255,.16);color:var(--gB)}
+.gp.D{background:rgba(10,20,22,.06);color:#5f6c70}
+.quote-band{margin-top:clamp(44px,6vw,72px);display:grid;grid-template-columns:auto 1fr;gap:clamp(18px,3vw,36px);align-items:center;padding-top:clamp(36px,5vw,56px);border-top:1px solid rgba(10,20,22,.12)}
+.quote-band .big{font-family:var(--display);font-stretch:70%;font-weight:900;font-size:clamp(84px,13vw,180px);line-height:.8;color:var(--green)}
+.quote-band p{font-family:var(--display);font-stretch:85%;font-weight:700;font-size:clamp(22px,2.6vw,34px);line-height:1.15;margin:0;max-width:30ch;text-transform:none;letter-spacing:-.01em}
+.quote-band p span{color:var(--green)}
+
+/* FUNNEL */
+.funnel{display:grid;grid-template-columns:repeat(6,1fr);gap:10px;counter-reset:f}
+.stage{position:relative;background:linear-gradient(180deg,var(--panel),var(--night-2));border:1px solid var(--line);border-radius:16px;padding:22px 18px 20px;min-height:220px;display:flex;flex-direction:column;justify-content:space-between;overflow:hidden;transition:transform .3s,border-color .3s}
+.stage:hover{transform:translateY(-4px);border-color:var(--line-2)}
+.stage .num{font-family:var(--mono);font-size:11px;color:var(--on-dark-2)}
+.stage .v{font-family:var(--display);font-stretch:78%;font-weight:850;font-size:clamp(30px,3vw,42px);line-height:1;margin:16px 0 6px}
+.stage .l{font-weight:600;font-size:14.5px}
+.stage .s{font-size:12.5px;color:var(--on-dark-2);margin-top:4px}
+.stage .g{position:absolute;top:18px;right:16px}
+.stage.exp{opacity:.78}
+.stage.win{background:linear-gradient(160deg,var(--green) 0%,#0b3d33 100%);border-color:rgba(67,224,176,.45)}
+.stage.win .s,.stage.win .num{color:#bfe9dc}
+.stage::after{content:"";position:absolute;left:18px;right:18px;bottom:0;height:3px;border-radius:3px 3px 0 0;background:var(--c,transparent)}
+.funnel-note{display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px;margin-top:22px;font-size:13px;color:var(--on-dark-2)}
+.funnel-note .lg{display:flex;gap:18px;flex-wrap:wrap}
+.funnel-note .lg span{display:flex;align-items:center;gap:7px}
+.funnel-note .lg i{width:10px;height:10px;border-radius:3px}
+
+/* GRADES */
+.grades{display:grid;grid-template-columns:.9fr 1.1fr;gap:clamp(24px,4vw,56px);align-items:stretch}
+.grade-tabs{display:grid;gap:10px}
+.gtab{all:unset;cursor:pointer;display:grid;grid-template-columns:64px 1fr auto;gap:18px;align-items:center;padding:16px 20px 16px 16px;border-radius:16px;border:1px solid var(--line);background:rgba(255,255,255,.02);transition:.25s}
+.gtab:hover{border-color:var(--line-2)}
+.gtab:focus-visible{outline:2px solid var(--mint);outline-offset:2px}
+.gtab .L{width:64px;height:64px;border-radius:14px;display:grid;place-items:center;font-family:var(--display);font-stretch:80%;font-weight:900;font-size:36px;color:#05201a;background:var(--c)}
+.gtab b{display:block;font-family:var(--display);font-stretch:85%;font-weight:800;text-transform:uppercase;font-size:21px;letter-spacing:.01em}
+.gtab small{color:var(--on-dark-2);font-size:13.5px}
+.gtab .arrow{opacity:0;transform:translateX(-6px);transition:.25s;color:var(--c)}
+.gtab[aria-selected="true"]{background:linear-gradient(90deg,rgba(255,255,255,.06),rgba(255,255,255,.02));border-color:var(--c)}
+.gtab[aria-selected="true"] .arrow{opacity:1;transform:none}
+.gpanel{border-radius:22px;border:1px solid var(--line-2);background:radial-gradient(120% 80% at 100% 0%,color-mix(in srgb,var(--c) 18%,transparent),transparent 60%),var(--panel);padding:clamp(26px,3.4vw,44px);display:flex;flex-direction:column;transition:background .4s}
+.gpanel .big{font-family:var(--display);font-stretch:70%;font-weight:900;font-size:clamp(110px,14vw,190px);line-height:.78;color:var(--c);transition:color .3s}
+.gpanel h3{font-family:var(--display);font-stretch:85%;font-weight:800;text-transform:uppercase;font-size:clamp(28px,3vw,40px);margin:18px 0 10px;line-height:1}
+.gpanel p{color:var(--on-dark-2);margin:0 0 22px;font-size:16.5px}
+.gpanel dl{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:auto 0 0}
+.gpanel dl div{border-top:1px solid var(--line);padding-top:12px}
+.gpanel dt{font-family:var(--mono);font-size:10.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--on-dark-2)}
+.gpanel dd{margin:6px 0 0;font-weight:600;font-size:15px}
+.fade-swap{animation:swap .45s ease}
+@keyframes swap{from{opacity:0;transform:translateY(8px)}}
+
+/* ROI RANGE */
+.range-card{margin-top:clamp(44px,6vw,64px);border-radius:22px;background:var(--paper);color:var(--ink);padding:clamp(26px,4vw,52px);display:grid;grid-template-columns:.85fr 1.15fr;gap:clamp(24px,4vw,60px);align-items:center}
+.range-card h3{font-size:clamp(34px,4.2vw,58px)}
+.range-card p{color:var(--ink-2);margin:16px 0 0}
+.rviz{display:grid;gap:18px}
+.rrow{display:grid;grid-template-columns:120px 1fr 64px;gap:14px;align-items:center;font-size:14px}
+.rrow .lab{font-weight:600}
+.rrow .lab small{display:block;font-weight:500;color:var(--ink-2);font-size:12px}
+.stack{display:flex;height:34px;border-radius:9px;overflow:hidden;background:var(--paper-2)}
+.stack i{display:block;height:100%;width:0;transition:width 1.2s cubic-bezier(.2,.8,.2,1)}
+.rrow .pct{font-family:var(--display);font-stretch:80%;font-weight:850;font-size:26px;text-align:right}
+.rleg{display:flex;flex-wrap:wrap;gap:14px;font-size:12.5px;color:var(--ink-2)}
+.rleg span{display:flex;align-items:center;gap:6px}.rleg i{width:11px;height:11px;border-radius:3px}
+.cost-line{font-size:12.5px;color:var(--ink-2);font-family:var(--mono)}
+
+/* REPORT */
+.report-grid{display:grid;grid-template-columns:1fr 1fr;gap:clamp(30px,5vw,80px);align-items:center}
+.pages{position:relative;height:clamp(420px,46vw,560px)}
+.pg{position:absolute;width:62%;aspect-ratio:1/1.414;background:#fff;border-radius:10px;box-shadow:0 30px 70px -24px rgba(10,30,30,.4),0 1px 0 rgba(0,0,0,.04);padding:6%;transition:transform .6s cubic-bezier(.2,.8,.2,1)}
+.pg:nth-child(1){left:2%;top:10%;transform:rotate(-8deg)}
+.pg:nth-child(2){left:19%;top:5%;transform:rotate(-2deg)}
+.pg:nth-child(3){left:36%;top:0;transform:rotate(5deg)}
+.pages:hover .pg:nth-child(1){transform:rotate(-12deg) translateX(-14px)}
+.pages:hover .pg:nth-child(3){transform:rotate(9deg) translateX(14px)}
+.pg .h{display:flex;justify-content:space-between;align-items:center;font-family:var(--mono);font-size:clamp(6px,.7vw,9px);color:#7a8789;border-bottom:1px solid #e6ebe8;padding-bottom:5%}
+.pg .h b{color:var(--green)}
+.pg .ti{font-family:var(--display);font-stretch:85%;font-weight:850;font-size:clamp(11px,1.35vw,17px);line-height:1.05;margin:7% 0 2%;color:var(--ink);text-transform:uppercase}
+.pg .st{font-size:clamp(6px,.65vw,8.5px);color:#7a8789}
+.pg .kp{display:grid;grid-template-columns:1fr 1fr;gap:5%;margin:7% 0}
+.pg .kp div{border:1px solid #e3e9e6;border-radius:5px;padding:7% 8%}
+.pg .kp em{display:block;font-style:normal;font-size:clamp(5px,.55vw,7.5px);color:#7a8789}
+.pg .kp b{font-family:var(--display);font-stretch:80%;font-size:clamp(11px,1.3vw,17px);color:var(--green)}
+.pg .ln{height:clamp(3px,.35vw,5px);border-radius:3px;background:#edf1ef;margin:4% 0}
+.pg .ln.s{width:70%}.pg .ln.m{width:86%}
+.pg .tb{display:grid;gap:3%;margin-top:6%}
+.pg .tb i{display:grid;grid-template-columns:1fr 18%;gap:4%;align-items:center}
+.pg .tb i::before{content:"";height:clamp(3px,.35vw,5px);background:#edf1ef;border-radius:3px}
+.pg .tb i b{height:clamp(7px,.8vw,11px);border-radius:3px}
+.pg .chart{display:flex;align-items:flex-end;gap:5%;height:26%;margin-top:7%;border-bottom:1px solid #e3e9e6}
+.pg .chart i{flex:1;background:linear-gradient(180deg,var(--signal),var(--green));border-radius:3px 3px 0 0}
+.pg .stamp{position:absolute;right:7%;bottom:6%;font-family:var(--mono);font-size:clamp(5px,.55vw,7.5px);color:#97a3a5}
+.deliv{display:grid;grid-template-columns:1fr 1fr;gap:0 28px;margin-top:34px}
+.deliv div{padding:18px 0;border-top:1px solid rgba(10,20,22,.12)}
+.deliv b{display:flex;gap:10px;align-items:baseline;font-weight:700;font-size:16px}
+.deliv b span{font-family:var(--mono);font-size:11px;color:var(--green)}
+.deliv p{margin:6px 0 0;color:var(--ink-2);font-size:14.5px}
+.fmt{display:flex;flex-wrap:wrap;gap:10px;margin-top:28px}
+.fmt span{font-family:var(--mono);font-size:12px;border:1px solid rgba(10,20,22,.15);border-radius:999px;padding:7px 13px}
+
+/* AUDIENCE */
+.aud{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+.aud-card{position:relative;border-radius:22px;overflow:hidden;padding:clamp(28px,4vw,48px);min-height:440px;display:flex;flex-direction:column;border:1px solid var(--line);isolation:isolate}
+.aud-card::before{content:"";position:absolute;inset:0;z-index:-1;opacity:.9}
+.aud-card.rh::before{background:radial-gradient(90% 70% at 100% 0%,rgba(67,224,176,.22),transparent 60%),linear-gradient(180deg,var(--panel),var(--night-2))}
+.aud-card.br::before{background:radial-gradient(90% 70% at 100% 0%,rgba(106,168,255,.2),transparent 60%),linear-gradient(180deg,var(--panel),var(--night-2))}
+.aud-card .ico{position:absolute;right:-30px;bottom:-30px;width:260px;height:260px;opacity:.09;z-index:-1}
+.aud-card h3{font-size:clamp(34px,4vw,54px);margin:16px 0 14px}
+.aud-card p{color:var(--on-dark-2);margin:0 0 24px;max-width:46ch}
+.ticks{list-style:none;margin:0 0 30px;padding:0;display:grid;gap:12px}
+.ticks li{display:flex;gap:12px;align-items:flex-start;font-size:15.5px}
+.ticks svg{width:20px;height:20px;flex:none;margin-top:2px;color:var(--signal)}
+.br .ticks svg{color:var(--gB)}
+.aud-card .btn{margin-top:auto;align-self:flex-start}
+
+/* PROCESS */
+.timeline{display:grid;grid-template-columns:repeat(4,1fr);gap:0;position:relative;margin-top:10px}
+.timeline::before{content:"";position:absolute;left:0;right:0;top:27px;height:2px;background:linear-gradient(90deg,var(--green),rgba(15,92,76,.15))}
+.step{padding-right:28px;position:relative}
+.step .dot{width:56px;height:56px;border-radius:50%;background:var(--paper);border:2px solid var(--green);display:grid;place-items:center;font-family:var(--display);font-stretch:80%;font-weight:850;font-size:22px;color:var(--green);position:relative;z-index:1}
+.step:last-child .dot{background:var(--green);color:#fff}
+.step .day{font-family:var(--mono);font-size:11.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--green);margin:22px 0 8px}
+.step h3{font-family:var(--display);font-stretch:85%;font-weight:800;text-transform:uppercase;font-size:24px;line-height:1.05;margin:0 0 10px}
+.step p{margin:0;color:var(--ink-2);font-size:15px}
+
+/* PRICING */
+.prices{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;align-items:stretch}
+.price{position:relative;border-radius:20px;border:1px solid var(--line);background:linear-gradient(180deg,var(--panel),var(--night-2));padding:28px 24px;display:flex;flex-direction:column;transition:transform .3s,border-color .3s}
+.price:hover{transform:translateY(-4px);border-color:var(--line-2)}
+.price .for{font-family:var(--mono);font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--on-dark-2)}
+.price h3{font-family:var(--display);font-stretch:85%;font-weight:800;text-transform:uppercase;font-size:22px;line-height:1.05;margin:10px 0 18px;min-height:2.1em}
+.price .amt{font-family:var(--display);font-stretch:78%;font-weight:900;font-size:clamp(46px,4.4vw,58px);line-height:.9}
+.price .amt small{display:block;font-family:var(--mono);font-stretch:100%;font-size:12px;font-weight:500;color:var(--on-dark-2);margin-top:8px;letter-spacing:.04em}
+.price.feat .amt small{color:#cdeee3}
+.price ul{list-style:none;margin:22px 0 26px;padding:18px 0 0;border-top:1px solid var(--line);display:grid;gap:10px;font-size:14px;color:var(--on-dark-2)}
+.price li{display:flex;gap:10px}
+.price li::before{content:"";flex:none;width:6px;height:6px;border-radius:50%;background:var(--mint);margin-top:8px}
+.price .btn{margin-top:auto;width:100%}
+.price.feat{background:linear-gradient(170deg,#12735f 0%,var(--green) 40%,#0a3a31 100%);border-color:rgba(67,224,176,.55);box-shadow:0 30px 80px -30px rgba(67,224,176,.45)}
+.price.feat .for,.price.feat ul{color:#cdeee3}
+.price.feat ul{border-color:rgba(255,255,255,.18)}
+.price.feat li::before{background:#fff}
+.badge{position:absolute;top:-12px;left:24px;background:var(--signal);color:#04211a;font-family:var(--mono);font-size:10.5px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;padding:6px 10px;border-radius:999px}
+.badge.alt{background:var(--paper);color:var(--ink)}
+.guarantee{margin-top:20px;border-radius:20px;border:1px dashed rgba(67,224,176,.5);background:rgba(67,224,176,.06);padding:24px clamp(22px,3vw,34px);display:grid;grid-template-columns:auto 1fr;gap:22px;align-items:center}
+.guarantee .shield{width:62px;height:62px;border-radius:16px;background:var(--signal);display:grid;place-items:center;color:#04211a}
+.guarantee .shield svg{width:30px;height:30px}
+.guarantee b{display:block;font-family:var(--display);font-stretch:85%;font-weight:800;text-transform:uppercase;font-size:clamp(20px,2vw,26px);line-height:1.1}
+.guarantee p{margin:6px 0 0;color:var(--on-dark-2)}
+
+/* PRINCIPLES */
+.princ{display:grid;grid-template-columns:repeat(5,1fr);gap:0;border-top:1px solid rgba(10,20,22,.14)}
+.princ div{padding:26px 22px 8px 0;border-right:1px solid rgba(10,20,22,.1);margin-right:22px}
+.princ div:last-child{border:0;margin:0}
+.princ .n{font-family:var(--mono);font-size:11px;color:var(--green)}
+.princ b{display:block;font-family:var(--display);font-stretch:85%;font-weight:800;text-transform:uppercase;font-size:19px;line-height:1.1;margin:12px 0 8px}
+.princ p{margin:0;color:var(--ink-2);font-size:14px}
+
+/* FAQ */
+.faq-grid{display:grid;grid-template-columns:.8fr 1.2fr;gap:clamp(30px,5vw,80px);align-items:start}
+.faq-grid .sticky{position:sticky;top:110px}
+.faq-grid h2{font-size:clamp(42px,5.6vw,78px)}
+details{border-bottom:1px solid rgba(10,20,22,.14)}
+details:first-child{border-top:1px solid rgba(10,20,22,.14)}
+summary{list-style:none;cursor:pointer;display:flex;justify-content:space-between;gap:20px;align-items:center;padding:24px 0;font-weight:650;font-size:clamp(17px,1.6vw,19.5px)}
+summary::-webkit-details-marker{display:none}
+summary .pm{flex:none;width:34px;height:34px;border-radius:50%;border:1px solid rgba(10,20,22,.18);position:relative;transition:.25s}
+summary .pm::before,summary .pm::after{content:"";position:absolute;left:50%;top:50%;width:12px;height:2px;background:var(--ink);transform:translate(-50%,-50%);transition:.25s}
+summary .pm::after{transform:translate(-50%,-50%) rotate(90deg)}
+details[open] summary .pm{background:var(--green);border-color:var(--green)}
+details[open] summary .pm::before{background:#fff}
+details[open] summary .pm::after{transform:translate(-50%,-50%) rotate(0);background:#fff}
+details .ans{padding:0 50px 26px 0;color:var(--ink-2);font-size:16px}
+details .ans p{margin:0 0 10px}
+
+/* FINAL CTA */
+.final{overflow:hidden;isolation:isolate;text-align:center}
+.final .bgfx{position:absolute;inset:0;z-index:-1;background:radial-gradient(60% 70% at 50% 110%,rgba(67,224,176,.35),transparent 70%),radial-gradient(40% 50% at 15% 0%,rgba(20,128,106,.35),transparent 70%)}
+.final .bgfx svg{position:absolute;left:50%;bottom:-2px;transform:translateX(-50%);width:1400px;max-width:none;opacity:.35}
+.final h2{font-size:clamp(50px,9vw,132px);margin:22px auto 26px;max-width:12ch}
+.final h2 em{font-style:normal;color:var(--signal)}
+.final .lead{margin:0 auto 38px}
+.final .cta-row{justify-content:center}
+.final .mail{margin-top:26px;font-size:15px;color:var(--on-dark-2)}
+.final .mail a{color:var(--mint)}
+
+footer{border-top:1px solid var(--line);padding:40px 0 calc(40px + env(safe-area-inset-bottom));font-size:14px;color:var(--on-dark-2)}
+footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:24px;align-items:center}
+footer nav{display:flex;flex-wrap:wrap;gap:22px}
+footer a{text-decoration:none}footer a:hover{color:var(--on-dark)}
+.foot-note{flex-basis:100%;font-size:12.5px;opacity:.8;padding-top:18px;border-top:1px solid var(--line)}
+
+
+/* VIDEO HERO (three layouts: banner | split | cinema) */
+.vhero{position:relative;background:#061012;isolation:isolate}
+.vh-media{position:relative;overflow:hidden;background:#061012}
+.vh-video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.vh-shade{position:absolute;inset:0;pointer-events:none}
+.vh-chip{position:absolute;display:flex;align-items:center;gap:12px;padding:10px 16px 10px 14px;border-radius:999px;background:rgba(6,16,18,.55);border:1px solid rgba(255,255,255,.14);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);z-index:2}
+.vh-chip-t{display:flex;flex-direction:column;line-height:1.15}
+.vh-chip-t span{font-family:var(--mono);font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:var(--mint)}
+.vh-chip-t b{font-family:var(--display);font-stretch:85%;font-weight:800;text-transform:uppercase;font-size:15px;letter-spacing:.01em;transition:opacity .3s}
+.vh-dot{flex:none;width:9px;height:9px;border-radius:50%;background:#ff4d4d;box-shadow:0 0 0 0 rgba(255,77,77,.6);animation:rec 1.6s infinite}
+@keyframes rec{70%{box-shadow:0 0 0 10px rgba(255,77,77,0)}}
+.swap{opacity:0!important}
+.vh-copy{position:relative}
+.vhero h1{margin:16px 0 0;text-shadow:0 4px 40px rgba(0,0,0,.25)}
+.vhero h1 em{font-style:normal;color:var(--signal)}
+.vhero .lead{color:#cfe0db;margin:0 0 28px;max-width:56ch}
+.vh-bar{position:relative;z-index:3;border-top:1px solid rgba(190,255,232,.14);border-bottom:1px solid rgba(190,255,232,.14);background:#08171a}
+.vh-bar-in{display:flex;align-items:center;justify-content:space-between;gap:24px;padding-top:14px;padding-bottom:14px}
+.vh-cap{display:flex;align-items:center;gap:clamp(18px,3vw,44px);min-width:0}
+.vh-cap>div{min-width:0}
+.vh-k{display:block;white-space:nowrap;font-family:var(--mono);font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:var(--on-dark-2);margin-bottom:3px}
+.vh-cap b{display:block;font-family:var(--display);font-stretch:85%;font-weight:800;text-transform:uppercase;font-size:clamp(14px,1.4vw,18px);letter-spacing:.01em;white-space:nowrap;transition:opacity .3s}
+.vh-cap b.m{color:var(--signal)}
+.vh-prog{display:flex;gap:5px;flex:none}
+.vh-prog i{display:block;width:26px;height:3px;border-radius:3px;background:rgba(255,255,255,.16);overflow:hidden;position:relative}
+.vh-prog i::after{content:"";position:absolute;inset:0;background:var(--signal);transform:scaleX(var(--p,0));transform-origin:left}
+
+/* A: BANNER — clean video band on top, copy below */
+.L-banner .vhero{display:flex;flex-direction:column}
+.L-banner .vh-media{height:clamp(380px,58svh,720px)}
+.L-banner .vh-shade{background:linear-gradient(180deg,rgba(6,16,18,.75) 0%,rgba(6,16,18,0) 18%,rgba(6,16,18,0) 82%,rgba(6,16,18,.55) 100%)}
+.L-banner .vh-chip{left:max(var(--gut),calc((100vw - var(--wrap))/2 + var(--gut)));bottom:22px}
+.L-banner .vh-copy{padding:clamp(40px,6vw,80px) 0 clamp(48px,6vw,90px);background:radial-gradient(70% 120% at 100% 0%,rgba(20,128,106,.22),transparent 60%),#061012}
+.L-banner .vh-content{display:grid;grid-template-columns:1.25fr 1fr;gap:clamp(24px,5vw,80px);align-items:end}
+.L-banner .vhero h1{font-size:clamp(52px,7.4vw,124px)}
+
+/* B: SPLIT — copy left, clean video right */
+.L-split .vhero{display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);grid-template-rows:auto auto}
+.L-split .vh-copy{grid-column:1;grid-row:1;display:flex;align-items:center;padding:120px 0 56px;background:radial-gradient(80% 60% at 0% 100%,rgba(20,128,106,.25),transparent 60%),#061012}
+.L-split .vh-content{max-width:none;padding-left:max(var(--gut),calc((100vw - var(--wrap))/2 + var(--gut)));padding-right:clamp(24px,4vw,56px)}
+.L-split .vh-media{grid-column:2;grid-row:1;min-height:min(100svh,980px)}
+.L-split .vh-shade{background:linear-gradient(90deg,rgba(6,16,18,.85) 0%,rgba(6,16,18,0) 18%),linear-gradient(180deg,rgba(6,16,18,.55) 0%,rgba(6,16,18,0) 14%)}
+.L-split .vh-chip{right:24px;bottom:24px}
+.L-split .vh-bar{grid-column:1/-1;grid-row:2}
+.L-split .vhero h1{font-size:clamp(50px,5.6vw,104px);margin-bottom:24px}
+
+/* C: CINEMA — full-screen footage, copy fades in after the intro */
+.L-cinema .vhero{display:flex;flex-direction:column}
+.L-cinema .vh-media{height:min(100svh,1150px);min-height:620px}
+.L-cinema .vh-shade{background:linear-gradient(180deg,rgba(6,16,18,.6) 0%,rgba(6,16,18,0) 16%,rgba(6,16,18,0) 55%,rgba(6,16,18,.72) 100%)}
+.L-cinema .vh-chip{right:max(var(--gut),calc((100vw - var(--wrap))/2 + var(--gut)));top:96px}
+.L-cinema .vh-copy{position:absolute;left:0;right:0;bottom:calc(64px + clamp(24px,5vh,56px));z-index:2;pointer-events:none}
+.L-cinema .vh-content{display:block}
+.L-cinema .vh-c1,.L-cinema .vh-c2{max-width:760px;pointer-events:auto;opacity:0;transform:translateY(24px);transition:opacity 1s cubic-bezier(.2,.8,.2,1),transform 1s cubic-bezier(.2,.8,.2,1)}
+.L-cinema .vh-c2{transition-delay:.25s}
+.L-cinema.intro-done .vh-c1,.L-cinema.intro-done .vh-c2{opacity:1;transform:none}
+.L-cinema .vhero h1{font-size:clamp(46px,6.2vw,104px);margin-bottom:20px;text-shadow:0 6px 50px rgba(0,0,0,.6)}
+.L-cinema .vhero .lead{text-shadow:0 2px 20px rgba(0,0,0,.7)}
+.L-cinema .vh-bar{position:absolute;left:0;right:0;bottom:0;background:rgba(6,16,18,.6);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border-bottom:0}
+
+/* layout switcher (only shown with ?hero=) */
+.lay-switch{position:fixed;right:16px;bottom:16px;z-index:60;display:none;gap:6px;padding:6px;border-radius:999px;background:rgba(6,16,18,.85);border:1px solid var(--line-2);backdrop-filter:blur(10px)}
+.show-switch .lay-switch{display:flex}
+.lay-switch a{font-family:var(--mono);font-size:12px;text-decoration:none;padding:8px 12px;border-radius:999px;color:var(--on-dark-2)}
+.lay-switch a.on{background:var(--signal);color:#04211a;font-weight:600}
+
+.verdict{background:linear-gradient(180deg,#061012,#0a181b)}
+.asset-list{list-style:none;margin:30px 0 0;padding:0;display:grid;grid-template-columns:1fr 1fr;gap:0 28px}
+.asset-list li{padding:14px 0;border-top:1px solid var(--line)}
+.asset-list b{display:block;font-weight:650;font-size:15.5px}
+.asset-list span{font-size:13px;color:var(--mint)}
+
+/* EVIDENCE CHECK */
+.check{display:grid;grid-template-columns:1.15fr .85fr;gap:clamp(24px,4vw,56px);align-items:start}
+.qs{display:grid;gap:12px;counter-reset:q}
+.q{display:grid;grid-template-columns:1fr auto;gap:18px;align-items:center;padding:18px 20px;border-radius:16px;background:#fff;border:1px solid var(--paper-2);transition:border-color .25s,box-shadow .25s}
+.q.ans{border-color:rgba(15,92,76,.35);box-shadow:0 10px 30px -18px rgba(15,92,76,.5)}
+.q p{margin:0;font-weight:600;font-size:16px;line-height:1.35}
+.q p small{display:block;font-weight:500;color:var(--ink-2);font-size:13px;margin-top:4px}
+.yn{display:flex;background:var(--paper);border-radius:999px;padding:4px;gap:2px}
+.yn button{all:unset;cursor:pointer;font-weight:600;font-size:14px;padding:8px 16px;border-radius:999px;color:var(--ink-2);transition:.2s}
+.yn button:focus-visible{outline:2px solid var(--green);outline-offset:2px}
+.yn button[aria-pressed="true"]{background:var(--ink);color:#fff}
+.yn button[aria-pressed="true"].y{background:var(--green)}
+.result{position:sticky;top:100px;border-radius:24px;background:var(--ink);color:var(--on-dark);padding:clamp(26px,3vw,40px);overflow:hidden;isolation:isolate}
+.result::before{content:"";position:absolute;inset:-40% -40% auto auto;width:360px;height:360px;border-radius:50%;background:radial-gradient(closest-side,var(--c,rgba(139,156,163,.35)),transparent);z-index:-1;transition:background .5s}
+.result .gl{font-family:var(--display);font-stretch:70%;font-weight:900;font-size:clamp(120px,14vw,190px);line-height:.8;color:var(--cc,var(--gD));transition:color .4s;margin:10px 0 6px}
+.result h3{font-family:var(--display);font-stretch:85%;font-weight:800;text-transform:uppercase;font-size:clamp(24px,2.4vw,32px);line-height:1.05;margin:8px 0 10px}
+.result p{color:var(--on-dark-2);margin:0 0 18px}
+.result .meter{display:grid;grid-template-columns:repeat(4,1fr);gap:6px;margin:6px 0 22px}
+.result .meter i{height:6px;border-radius:6px;background:rgba(255,255,255,.1);transition:background .4s}
+.result .todo{list-style:none;margin:0 0 24px;padding:0;display:grid;gap:8px;font-size:14px}
+.result .todo li{display:flex;gap:10px}
+.result .todo li::before{content:"+";color:var(--signal);font-weight:800}
+.result .cnt{font-family:var(--mono);font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--on-dark-2)}
+
+.role{display:grid;grid-template-columns:1fr 1fr;gap:4px;padding:5px;border-radius:999px;background:#fff;border:1px solid var(--paper-2);margin-bottom:6px}
+.role button{all:unset;cursor:pointer;text-align:center;padding:12px 10px;border-radius:999px;font-weight:650;font-size:14.5px;color:var(--ink-2);transition:.2s}
+.role button:focus-visible{outline:2px solid var(--green);outline-offset:2px}
+.role button[aria-selected="true"]{background:var(--ink);color:#fff}
+.role button[data-role="br"][aria-selected="true"]{background:#1d3f8a}
+.result .rnote{font-size:13px;color:var(--on-dark-2);margin:12px 0 0;text-align:center}
+@media(max-width:600px){.role{border-radius:18px;grid-template-columns:1fr}.role button{border-radius:14px}}
+/* top scroll progress */
+.sprog{position:fixed;left:0;top:0;height:3px;width:100%;transform-origin:left;transform:scaleX(0);background:linear-gradient(90deg,var(--signal),var(--mint));z-index:70}
+
+@media(max-width:920px){
+  .vh-q:nth-of-type(2){display:none}
+  .L-banner .vh-content{grid-template-columns:1fr}
+  .L-split .vhero{grid-template-columns:1fr;grid-template-rows:auto auto auto}
+  .L-split .vh-media{grid-column:1;grid-row:1;min-height:0;height:58svh}
+  .L-split .vh-copy{grid-column:1;grid-row:3;padding:40px 0 56px}
+  .L-split .vh-bar{grid-row:2}
+  .L-split .vh-content{padding-left:var(--gut);padding-right:var(--gut)}
+  .L-split .vh-shade{background:linear-gradient(180deg,rgba(6,16,18,.7) 0%,rgba(6,16,18,0) 20%)}
+  .check{grid-template-columns:1fr}
+  .result{position:relative;top:0}
+}
+@media(max-width:600px){
+  .L-banner .vh-media{height:58svh;min-height:340px}
+  .vhero h1{font-size:clamp(46px,14vw,76px)!important}
+  .vhero .lead{font-size:16px;margin-bottom:22px}
+  .L-cinema .vh-media{min-height:600px}
+  .L-cinema .vh-copy{bottom:76px}
+  .vh-chip{padding:8px 12px}
+  .vh-chip-t b{font-size:13px}
+  .vh-q{display:none}
+  .vh-prog{display:none}
+  .asset-list{grid-template-columns:1fr}
+  .q{grid-template-columns:1fr;gap:12px}
+  .yn{justify-self:start}
+}
+@media(prefers-reduced-motion:reduce){.vh-video{display:none}.vh-media{background:#061012 url(hero-poster.jpg) center/cover}.L-cinema .vh-c1,.L-cinema .vh-c2{opacity:1;transform:none}}
+
+/* EXPLORE TABS */
+.explore{background:#061012}
+.xbar{position:sticky;top:72px;z-index:40;background:rgba(6,16,18,.92);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.xtabs{display:grid;grid-template-columns:repeat(7,minmax(0,1fr));gap:6px;padding:10px 0}
+.xtab{all:unset;cursor:pointer;position:relative;display:flex;flex-direction:column;gap:2px;padding:12px 14px;border-radius:14px;border:1px solid transparent;transition:background .2s,border-color .2s;min-width:0}
+.xtab:hover{background:rgba(255,255,255,.04)}
+.xtab:focus-visible{outline:2px solid var(--mint);outline-offset:2px}
+.xtab .xn{font-family:var(--mono);font-size:10.5px;letter-spacing:.12em;color:var(--on-dark-2)}
+.xtab b{font-family:var(--display);font-stretch:85%;font-weight:800;text-transform:uppercase;font-size:16px;line-height:1.1;color:var(--on-dark);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.xtab small{font-size:12px;color:var(--on-dark-2);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.xtab[aria-selected="true"]{background:rgba(67,224,176,.1);border-color:rgba(67,224,176,.45)}
+.xtab[aria-selected="true"] .xn{color:var(--signal)}
+.xtab[aria-selected="true"]::after{content:"";position:absolute;left:14px;right:14px;bottom:-11px;height:3px;border-radius:3px;background:var(--signal)}
+.xpanel{animation:xin .5s cubic-bezier(.2,.8,.2,1)}
+@keyframes xin{from{opacity:0;transform:translateY(14px)}}
+.xnext{padding:28px 0 60px;background:inherit}
+.xpanel .xnext .wrap{display:flex;justify-content:flex-end}
+.xpanel > section:last-of-type + .xnext{margin-top:0}
+@media(max-width:1440px){.xtab small{display:none}}
+@media(max-width:1080px){.xtabs{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;-webkit-overflow-scrolling:touch;scrollbar-width:none}.xtabs::-webkit-scrollbar{display:none}.xtab{flex:0 0 auto;scroll-snap-align:start;max-width:220px}}
+@media(max-width:600px){.xbar{top:72px}.xtab{padding:10px 12px}.xtab small{display:none}.xtab b{font-size:14px}.xtab[aria-selected="true"]::after{bottom:-9px}}
+
+/* OPPORTUNITIES NETWORK */
+.xtabs{grid-template-columns:repeat(8,minmax(0,1fr))}
+.soon-dot{font-family:var(--mono);font-size:9px;letter-spacing:.08em;background:var(--gC);color:#2a1d00;padding:2px 5px;border-radius:999px;margin-left:4px;vertical-align:1px}
+.xtab .soon{font-style:normal;font-family:var(--mono);font-size:9.5px;letter-spacing:.08em;background:var(--gC);color:#2a1d00;padding:2px 6px;border-radius:999px;vertical-align:2px;margin-left:4px}
+.network{background:radial-gradient(60% 50% at 50% 0%,rgba(242,193,78,.12),transparent 70%),#061012}
+.net-grid{display:grid;grid-template-columns:1fr 1.05fr 1fr;gap:20px;align-items:stretch}
+.net-col{border:1px solid var(--line);border-radius:22px;padding:clamp(24px,3vw,36px);background:linear-gradient(180deg,var(--panel),var(--night-2));display:flex;flex-direction:column}
+.net-col h3{font-family:var(--display);font-stretch:85%;font-weight:800;text-transform:uppercase;font-size:clamp(24px,2.4vw,32px);line-height:1;margin:14px 0 18px}
+.net-col .btn{margin-top:auto;white-space:normal;text-align:center}
+.net-tag{align-self:flex-start;font-family:var(--mono);font-size:11px;letter-spacing:.12em;text-transform:uppercase;padding:6px 10px;border-radius:999px}
+.net-tag.rh{background:rgba(67,224,176,.12);color:var(--signal)}
+.net-tag.br{background:rgba(106,168,255,.12);color:var(--gB)}
+.net-preview{display:flex;flex-direction:column;justify-content:center;gap:12px;padding:10px}
+.np-card{border:1px dashed var(--line-2);border-radius:16px;padding:16px;background:rgba(255,255,255,.02);display:grid;gap:9px;filter:saturate(.8)}
+.np-top{display:flex;justify-content:space-between;align-items:center}
+.np-chip{font-family:var(--mono);font-size:10.5px;text-transform:uppercase;letter-spacing:.1em;color:var(--signal)}
+.np-chip.br{color:var(--gB)}
+.np-soon{font-family:var(--mono);font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:#2a1d00;background:var(--gC);padding:3px 8px;border-radius:999px}
+.np-l{display:block;height:9px;border-radius:5px;background:rgba(255,255,255,.1)}
+.w70{width:70%}.w60{width:60%}.w50{width:50%}.w45{width:45%}.w35{width:35%}.w30{width:30%}.w20{width:20%}.w15{width:15%}
+.np-row{display:flex;gap:8px;align-items:center}
+.np-g{width:24px;height:24px;border-radius:7px;display:grid;place-items:center;font-weight:800;font-size:12px;color:#05201a}
+.np-link{display:flex;align-items:center;gap:10px;justify-content:center;font-family:var(--mono);font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--gC)}
+.np-link span{flex:1;height:1px;background:linear-gradient(90deg,transparent,var(--gC),transparent)}
+.net-note{margin:22px 0 0;text-align:center;color:var(--on-dark-2);font-size:14px}
+@media(max-width:920px){.net-grid{grid-template-columns:1fr}.net-preview{order:-1;max-width:420px;margin:0 auto;width:100%}}
+
+/* REVEAL */
+.rv{opacity:0;transform:translateY(26px);transition:opacity .9s cubic-bezier(.2,.8,.2,1),transform .9s cubic-bezier(.2,.8,.2,1)}
+.rv.in{opacity:1;transform:none}
+.rv.d1{transition-delay:.08s}.rv.d2{transition-delay:.16s}.rv.d3{transition-delay:.24s}.rv.d4{transition-delay:.32s}.rv.d5{transition-delay:.4s}
+
+/* RESPONSIVE */
+@media(max-width:1080px){
+  .funnel{grid-template-columns:repeat(3,1fr)}
+  .prices{grid-template-columns:1fr 1fr}
+  .princ{grid-template-columns:1fr 1fr 1fr}
+  .princ div:nth-child(3){border:0}
+}
+@media(max-width:920px){
+  .hero{padding:120px 0 60px;min-height:auto}
+  .hero-grid,.sec-head,.versus,.grades,.range-card,.report-grid,.aud,.faq-grid{grid-template-columns:1fr}
+  .faq-grid .sticky{position:static}
+  .dash{max-width:560px}
+  .float-tag{display:none}
+  .timeline{grid-template-columns:1fr 1fr;row-gap:40px}
+  .timeline::before{display:none}
+  .pages{max-width:560px;width:100%;margin:0 auto}
+}
+@media(max-width:600px){
+  .hero h1{font-size:clamp(46px,14.5vw,72px)}
+  .cta-row .btn{flex:1 1 100%}
+  .dash{padding:18px;border-radius:20px}
+  .dash-top{grid-template-columns:1fr;justify-items:start}
+  .dash-top{grid-template-columns:auto 1fr;gap:16px}
+  .gauge,.gauge svg{width:112px;height:112px}
+  .gauge .c b{font-size:36px}
+  .kv .v{font-size:24px}
+  .bar{grid-template-columns:80px 1fr 68px}
+  .chips{grid-template-columns:repeat(2,1fr)}
+  .funnel{grid-template-columns:1fr 1fr}
+  .stage{min-height:180px;padding:18px 14px}
+  .gtab{grid-template-columns:52px 1fr;padding:12px}
+  .gtab .L{width:52px;height:52px;font-size:30px}
+  .gtab .arrow{display:none}
+  .gpanel dl{grid-template-columns:1fr}
+  .rrow{grid-template-columns:1fr 56px;row-gap:8px}
+  .rrow .lab{grid-column:1/-1}
+  .deliv{grid-template-columns:1fr}
+  .timeline{grid-template-columns:1fr}
+  .prices{grid-template-columns:1fr}
+  .price h3{min-height:0}
+  .princ{grid-template-columns:1fr}
+  .princ div{border-right:0;border-bottom:1px solid rgba(10,20,22,.1);margin:0;padding:22px 0}
+  .guarantee{grid-template-columns:1fr}
+  .quote-band{grid-template-columns:1fr}
+  details .ans{padding-right:0}
+  .aud-card{min-height:0}
+  footer .wrap{flex-direction:column;align-items:flex-start}
+}
+@media(prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation:none!important;transition:none!important;scroll-behavior:auto!important}
+  .rv{opacity:1;transform:none}
+}
+</style>
+</head>
+<body class="L-cinema">
+<div class="sprog" id="sprog"></div>
+<nav class="lay-switch" aria-label="Hero layout preview"><a href="?hero=banner" data-l="banner">A Banner</a><a href="?hero=split" data-l="split">B Split</a><a href="?hero=cinema" data-l="cinema">C Cinema</a></nav>
+
+<!-- NAV -->
+<header class="nav" id="nav">
+  <div class="wrap">
+    <a href="#top" class="logo" aria-label="Rightsworth home">
+      <svg viewBox="0 0 64 64" aria-hidden="true"><rect width="64" height="64" rx="14" fill="#0f5c4c"/><path d="M20 46V18h13.5c6 0 9.7 3.4 9.7 8.6 0 4-2.2 6.8-5.8 8L44.6 46h-7l-6.2-10.6H26V46h-6zm6-15.6h6.8c2.7 0 4.3-1.4 4.3-3.7s-1.6-3.6-4.3-3.6H26v7.3z" fill="#fff"/><rect x="20" y="50" width="24.6" height="3.2" rx="1.6" fill="#7fd1bd"/></svg>
+      Rightsworth
+    </a>
+    <nav class="nav-links" aria-label="Main">
+      <a href="#problem">The problem</a>
+      <a href="#grades">Evidence grades</a>
+      <a href="#check">Self-check</a>
+      <a href="#report">The report</a>
+      <a href="#pricing">Pricing</a>
+      <a href="#faq">FAQ</a>
+      <a href="#network">Network <span class="soon-dot">Soon</span></a>
+    </nav>
+    <a class="btn btn-primary desk" href="mailto:raymond@rightsworth.com?subject=Book%20a%2015-minute%20call">Book a call</a>
+    <button class="burger" id="burger" aria-label="Open menu" aria-expanded="false" aria-controls="mmenu"><span></span></button>
+  </div>
+  <div class="mobile-menu" id="mmenu">
+    <a href="#problem">The problem</a>
+    <a href="#grades">Evidence grades</a>
+    <a href="#check">Self-check</a>
+    <a href="#report">The report</a>
+    <a href="#pricing">Pricing</a>
+    <a href="#faq">FAQ</a>
+    <a href="#network">Opportunities network (soon)</a>
+    <a class="btn btn-primary" href="mailto:raymond@rightsworth.com?subject=Book%20a%2015-minute%20call">Book a 15-minute call</a>
+  </div>
+</header>
+
+<main id="top">
+
+<!-- HERO -->
+<section class="vhero" id="hero" aria-label="Sponsorship assets across sport">
+  <div class="vh-media">
+    <video class="vh-video" id="hv" autoplay muted loop playsinline preload="auto" aria-hidden="true"></video>
+    <div class="vh-shade" aria-hidden="true"></div>
+    <div class="vh-chip" aria-hidden="true"><span class="vh-dot"></span><span class="vh-chip-t"><span id="chipSport">Soccer</span><b id="chipAsset">Stadium LED ring</b></span></div>
+  </div>
+  <div class="vh-bar">
+    <div class="wrap vh-bar-in">
+      <div class="vh-cap">
+        <div><span class="vh-k">Now showing</span><b id="capAsset">Stadium LED ring</b></div>
+        <div class="vh-q"><span class="vh-k">Sponsor pays for</span><b>Visibility</b></div>
+        <div class="vh-q"><span class="vh-k">We prove</span><b class="m">Leads &middot; Sales &middot; Customers</b></div>
+      </div>
+      <div class="vh-prog" id="prog"></div>
+    </div>
+  </div>
+  <div class="vh-copy">
+    <div class="wrap vh-content">
+      <div class="vh-c1">
+        <span class="eyebrow">Sponsor Outcome Reports &middot; Any sport</span>
+        <h1 class="display">Prove what your sponsorship is <em>worth.</em></h1>
+      </div>
+      <div class="vh-c2">
+        <p class="lead">Jersey patches, LED rings, pit-lane liveries, courtside boards, naming rights. Sponsors pay millions for these assets. We show what each one actually returned: leads, promo codes, sales and customers, graded by evidence.</p>
+        <div class="cta-row">
+          <a class="btn btn-primary" href="mailto:raymond@rightsworth.com?subject=Book%20a%2015-minute%20call">Book a 15-minute call
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+          <a class="btn btn-ghost" href="#check">Grade your evidence in 30s</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- VERDICT -->
+<section class="sec verdict" id="verdict">
+  <div class="wrap hero-grid">
+    <div>
+      <span class="eyebrow rv">From the asset to the answer</span>
+      <h2 class="display rv d1" style="font-size:clamp(42px,5.6vw,80px);margin:18px 0 22px">Every asset has a price. We find its return.</h2>
+      <p class="lead rv d2">Pick one sponsor. We join the activation record to the sponsor's own leads, codes and sales, and hand you a verdict their finance team will sign off.</p>
+      <ul class="asset-list rv d3">
+        <li><b>Jersey &amp; kit patches</b><span>Codes, tagged leads</span></li>
+        <li><b>Naming rights</b><span>Regional lift vs control</span></li>
+        <li><b>LED &amp; perimeter boards</b><span>Exposure as context</span></li>
+        <li><b>Trackside &amp; court branding</b><span>Attributed sales</span></li>
+        <li><b>Hospitality &amp; activations</b><span>Pipeline &amp; customers</span></li>
+        <li><b>Digital &amp; social</b><span>Tracked links, UTMs</span></li>
+      </ul>
+    </div>
+    <div class="rv d2" style="position:relative">
+      <div class="dash" id="dash" aria-label="Sample report verdict, fictional data">
+        <div class="dash-head">
+          <div><div class="t">Sponsor Outcome Report &middot; 2025/26</div><div class="n">Riverside FC &times; Northbank</div></div>
+          <span class="live">Sample</span>
+        </div>
+        <div class="dash-top">
+          <div class="gauge">
+            <svg viewBox="0 0 120 120"><defs><linearGradient id="gg" x1="0" x2="1"><stop offset="0" stop-color="#43e0b0"/><stop offset="1" stop-color="#7fd1bd"/></linearGradient></defs>
+              <circle class="trk" cx="60" cy="60" r="54" fill="none" stroke-width="10"/>
+              <circle class="val" id="gval" cx="60" cy="60" r="54" fill="none" stroke-width="10"/></svg>
+            <div class="c"><b data-count="88">0</b><span>/100 health</span></div>
+          </div>
+          <div class="kv">
+            <div class="k">Tracked value vs cost</div>
+            <div class="v">£<span data-count="355.6" data-dec="1">0</span>K<small style="display:block;font-family:var(--mono);font-stretch:100%;font-weight:500;font-size:11.5px;color:var(--on-dark-2);margin-top:4px">against £180K total cost</small></div>
+            <span class="rec"><i></i>Renew &amp; expand</span>
+          </div>
+        </div>
+        <div class="roi">
+          <div class="roi-row"><span class="kv"><span class="k">ROI range</span></span><b><span data-count="98">0</span>% &ndash; <span data-count="114">0</span>%</b></div>
+          <div class="roi-track"><div class="roi-fill" id="roifill"></div></div>
+          <div class="roi-scale"><span>0%</span><span>conservative &rarr; base</span><span>150%</span></div>
+        </div>
+        <div class="bars">
+          <div class="bar"><span class="l">Promo codes</span><span class="tr"><span class="f" data-w="100" style="background:var(--gB)"></span></span><span class="n">£271.2K</span></div>
+          <div class="bar"><span class="l">Tagged leads</span><span class="tr"><span class="f" data-w="18" style="background:var(--gB)"></span></span><span class="n">£48.4K</span></div>
+          <div class="bar"><span class="l">Incremental</span><span class="tr"><span class="f" data-w="13" style="background:var(--gA)"></span></span><span class="n">£36.0K</span></div>
+        </div>
+        <div class="chips">
+          <div class="chip"><span class="g" style="background:var(--gA)">A</span><div class="a">£36.0K</div><div class="s">Incremental</div></div>
+          <div class="chip"><span class="g" style="background:var(--gB)">B</span><div class="a">£319.6K</div><div class="s">Attributed</div></div>
+          <div class="chip"><span class="g" style="background:var(--gC)">C</span><div class="a">£60.0K</div><div class="s">Associated</div></div>
+          <div class="chip"><span class="g" style="background:var(--gD)">D</span><div class="a">£543K</div><div class="s">Context only</div></div>
+        </div>
+        <div class="dash-foot">Fictional club and sponsor, shown to illustrate the report format.</div>
+      </div>
+      <div class="float-tag"><span class="g">B</span><div>452 promo-code accounts<small>Tracked, not estimated</small></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- MARQUEE -->
+<div class="marquee" aria-label="Sports we work with">
+  <div class="marquee-track">
+    <span class="on">Soccer</span><span>Baseball</span><span class="on">Basketball</span><span>Motorsport</span><span class="on">Hockey</span><span>Rugby</span><span class="on">Running</span><span>Leagues</span><span class="on">Venues</span><span>Events</span>
+    <span class="on" aria-hidden="true">Soccer</span><span aria-hidden="true">Baseball</span><span class="on" aria-hidden="true">Basketball</span><span aria-hidden="true">Motorsport</span><span class="on" aria-hidden="true">Hockey</span><span aria-hidden="true">Rugby</span><span class="on" aria-hidden="true">Running</span><span aria-hidden="true">Leagues</span><span class="on" aria-hidden="true">Venues</span><span aria-hidden="true">Events</span>
+  </div>
+</div>
+
+<!-- EXPLORE (tabbed sections) -->
+<section class="explore" id="explore" aria-label="Explore Rightsworth">
+  <div class="xbar" id="xbar"><div class="wrap"><div class="xtabs" role="tablist" aria-label="Sections"><button type="button" role="tab" class="xtab" id="tab-problem" aria-controls="panel-problem" aria-selected="false" data-p="problem"><span class="xn">01</span><b>Problem</b><small>Logos don't renew deals</small></button><button type="button" role="tab" class="xtab" id="tab-grades" aria-controls="panel-grades" aria-selected="false" data-p="grades"><span class="xn">02</span><b>Grades</b><small>How we grade every number</small></button><button type="button" role="tab" class="xtab" id="tab-check" aria-controls="panel-check" aria-selected="false" data-p="check"><span class="xn">03</span><b>Self-check</b><small>Grade your evidence in 30s</small></button><button type="button" role="tab" class="xtab" id="tab-report" aria-controls="panel-report" aria-selected="false" data-p="report"><span class="xn">04</span><b>Report</b><small>What you get, in 10 days</small></button><button type="button" role="tab" class="xtab" id="tab-who" aria-controls="panel-who" aria-selected="false" data-p="who"><span class="xn">05</span><b>Who it's for</b><small>Rights holders and brands</small></button><button type="button" role="tab" class="xtab" id="tab-pricing" aria-controls="panel-pricing" aria-selected="false" data-p="pricing"><span class="xn">06</span><b>Pricing</b><small>Fixed fees and our rules</small></button><button type="button" role="tab" class="xtab" id="tab-faq" aria-controls="panel-faq" aria-selected="false" data-p="faq"><span class="xn">07</span><b>FAQ</b><small>Straight answers</small></button><button type="button" role="tab" class="xtab" id="tab-network" aria-controls="panel-network" aria-selected="false" data-p="network"><span class="xn">08 <i class="soon">Soon</i></span><b>Network</b><small>Find partnership matches</small></button></div></div></div>
+  <div class="xpanel" id="panel-problem" role="tabpanel" aria-labelledby="tab-problem" data-p="problem" hidden>
+<!-- PROBLEM -->
+<section class="sec light" id="problem">
+  <div class="wrap">
+    <div class="sec-head">
+      <div><span class="eyebrow rv">The renewal gap</span><h2 class="display rv d1" style="margin-top:18px">Logos don't renew deals. Outcomes do.</h2></div>
+      <p class="lead rv d2">Exposure reports tell a sponsor how many people saw the logo. Their CFO wants to know what it sold. Almost nobody joins the activation record to the sponsor's own leads, codes and sales, and then says honestly how strong that evidence is. We do.</p>
+    </div>
+    <div class="versus">
+      <div class="vs-card vs-old rv">
+        <span class="tag">The typical renewal deck</span>
+        <h3>Shows what was seen</h3>
+        <ul class="vs-list">
+          <li>Broadcast impressions <span class="gp D">Grade D</span></li>
+          <li>Media value equivalency <span class="gp D">Grade D</span></li>
+          <li>Social reach and engagement <span class="gp D">Grade D</span></li>
+          <li>Matchday photos and recaps <span class="gp D">Grade D</span></li>
+          <li>One big ROI number, no method <span class="gp D">Unproven</span></li>
+        </ul>
+      </div>
+      <div class="vs-card vs-new rv d2">
+        <span class="tag">A Rightsworth report</span>
+        <h3>Shows what it sold</h3>
+        <ul class="vs-list">
+          <li>New customers vs a control region <span class="gp A">Grade A</span></li>
+          <li>Promo-code redemptions and revenue <span class="gp B">Grade B</span></li>
+          <li>CRM leads tagged to the partnership <span class="gp B">Grade B</span></li>
+          <li>Cost per outcome, attributed revenue <span class="gp B">Graded</span></li>
+          <li>ROI as a range, with its method <span class="gp A">Defensible</span></li>
+        </ul>
+      </div>
+    </div>
+    <div class="quote-band rv">
+      <div class="big">100%</div>
+      <p>Most renewal decks are <span>100% grade D.</span> One grade B number changes the conversation with finance.</p>
+    </div>
+  </div>
+</section>
+
+<!-- FUNNEL -->
+<section class="sec" id="outcomes" style="background:var(--night-2)">
+  <div class="wrap">
+    <div class="sec-head">
+      <div><span class="eyebrow rv">From logo to ledger</span><h2 class="display rv d1" style="margin-top:18px">We follow the deal all the way to revenue.</h2></div>
+      <p class="lead rv d2">Exposure stays in the report as context. Then we keep going: through engagement, tagged leads and codes, to customers and the revenue they brought in. Every step carries its evidence grade.</p>
+    </div>
+    <div class="funnel">
+      <div class="stage exp rv" style="--c:var(--gD)"><span class="num">01 &middot; Exposure</span><span class="gp D g" style="background:rgba(255,255,255,.08);color:var(--on-dark-2)">D</span><div><div class="v"><span data-count="16.9" data-dec="1">0</span>M</div><div class="l">Impressions</div><div class="s">Broadcast, social, in-venue</div></div></div>
+      <div class="stage exp rv d1" style="--c:var(--gD)"><span class="num">02 &middot; Engagement</span><span class="gp D g" style="background:rgba(255,255,255,.08);color:var(--on-dark-2)">D</span><div><div class="v"><span data-count="142">0</span>K</div><div class="l">Engagements</div><div class="s">+20% vs last season</div></div></div>
+      <div class="stage rv d2" style="--c:var(--gB)"><span class="num">03 &middot; Leads</span><span class="gp B g">B</span><div><div class="v"><span data-count="1210" data-sep="1">0</span></div><div class="l">Tagged CRM leads</div><div class="s">Source-tagged to the deal</div></div></div>
+      <div class="stage rv d3" style="--c:var(--gB)"><span class="num">04 &middot; Codes</span><span class="gp B g">B</span><div><div class="v"><span data-count="452">0</span></div><div class="l">Code accounts</div><div class="s">One code per channel</div></div></div>
+      <div class="stage rv d4" style="--c:var(--gA)"><span class="num">05 &middot; Customers</span><span class="gp A g">A</span><div><div class="v">+<span data-count="60">0</span></div><div class="l">Incremental accounts</div><div class="s">Club region vs control</div></div></div>
+      <div class="stage win rv d5" style="--c:var(--signal)"><span class="num">06 &middot; Revenue</span><div><div class="v">£<span data-count="355.6" data-dec="1">0</span>K</div><div class="l">Tracked value</div><div class="s">vs £180K total cost</div></div></div>
+    </div>
+    <div class="funnel-note">
+      <div class="lg"><span><i style="background:var(--gA)"></i>A Incremental</span><span><i style="background:var(--gB)"></i>B Attributed</span><span><i style="background:var(--gC)"></i>C Associated</span><span><i style="background:var(--gD)"></i>D Exposure</span></div>
+      <span>Figures from our sample report (fictional club and sponsor).</span>
+    </div>
+  </div>
+</section>
+
+<div class="xnext"><div class="wrap"><button type="button" class="btn btn-ghost" data-go="grades">Next: Evidence grades <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button></div></div>
+</div>
+<div class="xpanel" id="panel-grades" role="tabpanel" aria-labelledby="tab-grades" data-p="grades" hidden>
+<!-- GRADES -->
+<section class="sec" id="grades">
+  <div class="wrap">
+    <div class="sec-head">
+      <div><span class="eyebrow rv">The Rightsworth standard</span><h2 class="display rv d1" style="margin-top:18px">Every number is graded.</h2></div>
+      <p class="lead rv d2">A finance director's first question is "how do you know?". So every result we report carries a grade for how strong its evidence is. Pick a grade to see what it means.</p>
+    </div>
+    <div class="grades">
+      <div class="grade-tabs rv" role="tablist" aria-label="Evidence grades">
+        <button class="gtab" role="tab" aria-selected="true" data-g="A" style="--c:var(--gA)"><span class="L">A</span><span><b>Incremental</b><small>Compared against no sponsorship</small></span><svg class="arrow" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button>
+        <button class="gtab" role="tab" aria-selected="false" data-g="B" style="--c:var(--gB)"><span class="L">B</span><span><b>Attributed</b><small>Tracked directly to the deal</small></span><svg class="arrow" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button>
+        <button class="gtab" role="tab" aria-selected="false" data-g="C" style="--c:var(--gC)"><span class="L">C</span><span><b>Associated</b><small>Moved during the deal, untracked</small></span><svg class="arrow" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button>
+        <button class="gtab" role="tab" aria-selected="false" data-g="D" style="--c:var(--gD)"><span class="L">D</span><span><b>Exposure only</b><small>Seen, not sold</small></span><svg class="arrow" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button>
+      </div>
+      <div class="gpanel rv d2" id="gpanel" role="tabpanel" style="--c:var(--gA)">
+        <div class="fade-swap" id="gbody"></div>
+      </div>
+    </div>
+
+    <div class="range-card rv" id="roi">
+      <div>
+        <span class="eyebrow" style="color:var(--green)">ROI, done honestly</span>
+        <h3 class="display" style="margin-top:16px">Never one inflated number. Always a range.</h3>
+        <p>The conservative case counts only what we can track or compare. The base case adds half-credit for what moved without tracking. Media value sits beside ROI as context, and is never counted inside it.</p>
+      </div>
+      <div class="rviz" id="rviz">
+        <div class="rrow"><span class="lab">Conservative<small>A + B only</small></span>
+          <span class="stack"><i data-w="9.0" style="background:var(--gA)"></i><i data-w="80.0" style="background:var(--gB)"></i></span><span class="pct">98%</span></div>
+        <div class="rrow"><span class="lab">Base case<small>A + B + &frac12; C</small></span>
+          <span class="stack"><i data-w="9.0" style="background:var(--gA)"></i><i data-w="80.0" style="background:var(--gB)"></i><i data-w="7.5" style="background:var(--gC)"></i></span><span class="pct">114%</span></div>
+        <div class="rrow"><span class="lab">Media value<small>Context, not return</small></span>
+          <span class="stack"><i data-w="100" style="background:repeating-linear-gradient(45deg,#c9d1cf 0 6px,#dfe5e2 6px 12px)"></i></span><span class="pct" style="color:#8b9ca3;font-size:15px">excluded</span></div>
+        <div class="rleg"><span><i style="background:var(--gA)"></i>A £36.0K</span><span><i style="background:var(--gB)"></i>B £319.6K</span><span><i style="background:var(--gC)"></i>&frac12; C £30.0K</span></div>
+        <div class="cost-line">Sample figures. Total partnership cost £180,000.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="xnext"><div class="wrap"><button type="button" class="btn btn-ghost" data-go="check">Next: Self-check <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button></div></div>
+</div>
+<div class="xpanel" id="panel-check" role="tabpanel" aria-labelledby="tab-check" data-p="check" hidden>
+<!-- EVIDENCE CHECK -->
+<section class="sec light" id="check">
+  <div class="wrap">
+    <div class="sec-head">
+      <div><span class="eyebrow rv">30-second self-check</span><h2 class="display rv d1" style="margin-top:18px" id="chkH">How strong is your sponsorship evidence?</h2></div>
+      <p class="lead rv d2" id="chkL">Pick your side, then answer five questions about one partnership. You'll see the grade the case would get today, and what would lift it.</p>
+    </div>
+    <div class="check">
+      <div class="qs rv" id="qs">
+        <div class="role" role="tablist" aria-label="Which side are you on?">
+          <button type="button" role="tab" aria-selected="true" data-role="rh">I'm a team, league or event</button>
+          <button type="button" role="tab" aria-selected="false" data-role="br">I'm a sponsor or brand</button>
+        </div>
+        <div class="q" data-k="code" data-rq="Does the sponsor have its own promo code or tracked link?" data-rs="One code per sponsor, ideally per channel" data-bq="Does this partnership have its own promo code or tracked link?" data-bs="A code, landing page or UTM only this deal uses"><p><span class="qt">Does the sponsor have its own promo code or tracked link?</span><small>One code per sponsor, ideally per channel</small></p><div class="yn"><button class="y" aria-pressed="false">Yes</button><button class="n" aria-pressed="false">No</button></div></div>
+        <div class="q" data-k="crm" data-rq="Are leads from the partnership tagged in the sponsor's CRM?" data-rs="A source tag or campaign field" data-bq="Are leads from the partnership tagged in your CRM?" data-bs="A source tag or campaign field"><p><span class="qt">Are leads from the partnership tagged in the sponsor's CRM?</span><small>A source tag or campaign field</small></p><div class="yn"><button class="y" aria-pressed="false">Yes</button><button class="n" aria-pressed="false">No</button></div></div>
+        <div class="q" data-k="value" data-rq="Has the sponsor agreed what one customer or lead is worth?" data-rs="In writing, even a rough number" data-bq="Do you know what one new customer or lead is worth to you?" data-bs="Average order value, lifetime value, or a finance figure"><p><span class="qt">Has the sponsor agreed what one customer or lead is worth?</span><small>In writing, even a rough number</small></p><div class="yn"><button class="y" aria-pressed="false">Yes</button><button class="n" aria-pressed="false">No</button></div></div>
+        <div class="q" data-k="ctrl" data-rq="Is there a region, period or group without the sponsorship to compare?" data-rs="A control market, last season, or a non-activated area" data-bq="Do you have a region, period or group without the sponsorship to compare?" data-bs="A market where you don't sponsor, or the season before"><p><span class="qt">Is there a region, period or group without the sponsorship to compare?</span><small>A control market, last season, or a non-activated area</small></p><div class="yn"><button class="y" aria-pressed="false">Yes</button><button class="n" aria-pressed="false">No</button></div></div>
+        <div class="q" data-k="sales" data-rq="Can the sponsor share sales or account totals for the season?" data-rs="Totals only, no personal data" data-bq="Can you pull sales or account totals for the partnership period?" data-bs="Totals only, no personal data"><p><span class="qt">Can the sponsor share sales or account totals for the season?</span><small>Totals only, no personal data</small></p><div class="yn"><button class="y" aria-pressed="false">Yes</button><button class="n" aria-pressed="false">No</button></div></div>
+      </div>
+      <div class="result rv d2" id="result" aria-live="polite">
+        <span class="cnt" id="rcnt">0 of 5 answered</span>
+        <div class="gl" id="rg">?</div>
+        <div class="meter"><i></i><i></i><i></i><i></i></div>
+        <h3 id="rt">Answer to see your grade</h3>
+        <p id="rd">Most renewal decks we see sit at grade D: impressions and media value only.</p>
+        <ul class="todo" id="rtodo"></ul>
+        <a class="btn btn-primary" id="rcta" href="mailto:raymond@rightsworth.com?subject=Evidence%20check%20-%20book%20a%20call" style="width:100%">Get it graded properly</a>
+        <p class="rnote" id="rnote">Our Single Sponsor Report turns this into a renewal-ready case.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="xnext"><div class="wrap"><button type="button" class="btn btn-ghost" data-go="report">Next: The report <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button></div></div>
+</div>
+<div class="xpanel" id="panel-report" role="tabpanel" aria-labelledby="tab-report" data-p="report" hidden>
+<!-- REPORT -->
+<section class="sec light" id="report">
+  <div class="wrap report-grid">
+    <div class="pages rv" aria-hidden="true">
+      <div class="pg"><div class="h"><b>RIGHTSWORTH</b><span>p.3</span></div><div class="ti">ROI range</div><div class="st">Conservative and base case</div><div class="tb"><i><b style="background:var(--gA);width:30%"></b></i><i><b style="background:var(--gB)"></b></i><i><b style="background:var(--gC);width:60%"></b></i><i><b style="background:#d6dcda"></b></i></div><div class="ln m"></div><div class="ln s"></div><div class="ln"></div><div class="stamp">rightsworth.com</div></div>
+      <div class="pg"><div class="h"><b>RIGHTSWORTH</b><span>p.2</span></div><div class="ti">Commercial outcomes</div><div class="st">Graded by evidence</div><div class="chart"><i style="height:35%"></i><i style="height:100%"></i><i style="height:42%"></i><i style="height:22%"></i><i style="height:60%"></i></div><div class="ln m"></div><div class="ln s"></div><div class="ln"></div><div class="ln m"></div><div class="stamp">rightsworth.com</div></div>
+      <div class="pg"><div class="h"><b>RIGHTSWORTH</b><span>Outcome Report</span></div><div class="ti">1. The verdict</div><div class="st">What the partnership delivered for the sponsor's business</div><div class="kp"><div><em>Renewal health</em><b>88/100</b></div><div><em>ROI range</em><b>98&ndash;114%</b></div><div><em>Best grade</em><b>A</b></div><div><em>Verdict</em><b style="font-size:.8em">RENEW +</b></div></div><div class="ln"></div><div class="ln m"></div><div class="ln s"></div><div class="ln m"></div><div class="ln"></div><div class="stamp">p.1 of 4</div></div>
+    </div>
+    <div>
+      <span class="eyebrow rv">What lands on your desk</span>
+      <h2 class="display rv d1" style="font-size:clamp(42px,5.6vw,78px);margin-top:18px">A report a CFO can stop reading after page two.</h2>
+      <div class="deliv">
+        <div class="rv"><b><span>01</span>One-page verdict</b><p>Renewal health score, ROI range with its grade, the three strongest results and a clear recommendation.</p></div>
+        <div class="rv d1"><b><span>02</span>Objectives vs results</b><p>Every agreed KPI against its target, with attainment and evidence grade.</p></div>
+        <div class="rv d2"><b><span>03</span>Delivery audit</b><p>What was contracted vs delivered, asset by asset, with the gaps flagged.</p></div>
+        <div class="rv d3"><b><span>04</span>Commercial outcomes</b><p>Leads, codes, sales and customers, with cost per outcome and attributed revenue.</p></div>
+        <div class="rv d1"><b><span>05</span>Next-year package</b><p>What to keep, cut and add, and the price logic for the renewal.</p></div>
+        <div class="rv d2"><b><span>06</span>Measurement plan</b><p>Codes, links, CRM tags and a control region, so next season can reach grade A.</p></div>
+      </div>
+      <div class="fmt rv"><span>10&ndash;15 pages</span><span>PDF + editable deck</span><span>45-min review call</span><a class="btn btn-ghost" style="padding:7px 14px;font-size:13px" href="rightsworth-sample-report.pdf" target="_blank" rel="noopener">Open the sample &rarr;</a></div>
+    </div>
+  </div>
+</section>
+
+<!-- PROCESS -->
+<section class="sec light" id="process">
+  <div class="wrap">
+    <div class="sec-head">
+      <div><span class="eyebrow rv">How it works</span><h2 class="display rv d1" style="margin-top:18px">Ten working days. Four steps.</h2></div>
+      <p class="lead rv d2">Built around the data you already have. No new tools, no personal data, no disruption to the season.</p>
+    </div>
+    <div class="timeline">
+      <div class="step rv"><div class="dot">1</div><div class="day">Day 0 &middot; 30 min</div><h3>Scoping call</h3><p>Pick one sponsor whose renewal is three to six months away and agree what counts as a result.</p></div>
+      <div class="step rv d1"><div class="dot">2</div><div class="day">Day 1</div><h3>Send your exports</h3><p>The reports you already have: delivery logs, codes, CRM totals, sales. Totals only, nothing personal.</p></div>
+      <div class="step rv d2"><div class="dot">3</div><div class="day">Days 2&ndash;9</div><h3>We grade and write</h3><p>Fixed formulas, every number graded A to D, every assumption stated and reviewed by hand.</p></div>
+      <div class="step rv d3"><div class="dot">&#10003;</div><div class="day">Day 10 &middot; 45 min</div><h3>Review and handover</h3><p>A walkthrough call, then the PDF and an editable deck, ready for the renewal meeting.</p></div>
+    </div>
+  </div>
+</section>
+
+<div class="xnext"><div class="wrap"><button type="button" class="btn btn-ghost" data-go="who">Next: Who it's for <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button></div></div>
+</div>
+<div class="xpanel" id="panel-who" role="tabpanel" aria-labelledby="tab-who" data-p="who" hidden>
+<!-- AUDIENCE -->
+<section class="sec" id="who">
+  <div class="wrap">
+    <div class="sec-head">
+      <div><span class="eyebrow rv">Who it's for</span><h2 class="display rv d1" style="margin-top:18px">Both sides of the table.</h2></div>
+      <p class="lead rv d2">Teams, leagues, tracks and events use the report to renew and price up. Brands use it to defend the budget to finance. Same standard, same grades, any sport.</p>
+    </div>
+    <div class="aud">
+      <div class="aud-card rh rv">
+        <svg class="ico" viewBox="0 0 24 24" fill="none" stroke="#7fd1bd" stroke-width="1"><path d="M3 21h18M5 21V10l7-5 7 5v11M9 21v-6h6v6"/></svg>
+        <span class="eyebrow">Rights holders</span>
+        <h3 class="display">Walk into renewal with proof.</h3>
+        <p>For heads of partnerships and commercial directors at clubs, leagues, tracks, venues and events.</p>
+        <ul class="ticks">
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12l5 5L20 6"/></svg>Show the sponsor what the deal did for their business, not just their visibility</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12l5 5L20 6"/></svg>Back a price rise with graded evidence</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12l5 5L20 6"/></svg>Package new inventory, like jersey patches or naming rights, with measurement built in</li>
+        </ul>
+        <a class="btn btn-primary" href="#pricing">See packages</a>
+      </div>
+      <div class="aud-card br rv d2">
+        <svg class="ico" viewBox="0 0 24 24" fill="none" stroke="#6aa8ff" stroke-width="1"><path d="M3 3v18h18"/><path d="M7 15l4-4 3 3 6-6"/></svg>
+        <span class="eyebrow" style="color:var(--gB)">Brands &amp; sponsors</span>
+        <h3 class="display">Defend the budget to finance.</h3>
+        <p>For sponsorship and marketing leads who have to justify a partnership with numbers finance will sign off.</p>
+        <ul class="ticks">
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12l5 5L20 6"/></svg>Audit a partnership from your own CRM and sales data</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12l5 5L20 6"/></svg>Decide what to keep, cut or renegotiate before the contract rolls</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12l5 5L20 6"/></svg>A CFO-ready summary, independent of the rights holder</li>
+        </ul>
+        <a class="btn btn-ghost" href="#pricing">Sponsor Value Audit</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="xnext"><div class="wrap"><button type="button" class="btn btn-ghost" data-go="pricing">Next: Pricing <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button></div></div>
+</div>
+<div class="xpanel" id="panel-pricing" role="tabpanel" aria-labelledby="tab-pricing" data-p="pricing" hidden>
+<!-- PRICING -->
+<section class="sec" id="pricing" style="background:var(--night-2)">
+  <div class="wrap">
+    <div class="sec-head">
+      <div><span class="eyebrow rv">Packages</span><h2 class="display rv d1" style="margin-top:18px">Fixed fees. No retainers.</h2></div>
+      <p class="lead rv d2">Each report costs a fraction of the sponsorship it protects. Prices in GBP, excluding VAT.</p>
+    </div>
+    <div class="prices">
+      <div class="price rv"><span class="badge alt">3 places only</span><span class="for">Founding partners</span><h3>Founding partner report</h3><div class="amt">£1,150<small>1 report</small></div>
+        <ul><li>One full sponsor report</li><li>In return for a case study and testimonial</li><li>First three customers only</li></ul>
+        <a class="btn btn-ghost" href="mailto:raymond@rightsworth.com?subject=Founding%20partner%20report">Apply</a></div>
+      <div class="price feat rv d1"><span class="badge">Core report</span><span class="for">Rights holders</span><h3>Single Sponsor Report</h3><div class="amt">£2,700<small>per sponsor</small></div>
+        <ul><li>One sponsor, up to 4 data sources</li><li>Review call, PDF and editable deck</li><li>Within 10 working days of the data</li></ul>
+        <a class="btn btn-primary" href="mailto:raymond@rightsworth.com?subject=Single%20Sponsor%20Report">Book a call</a></div>
+      <div class="price rv d2"><span class="for">Rights holders</span><h3>Renewal Season Pack</h3><div class="amt">£9,600<small>5 reports</small></div>
+        <ul><li>Five sponsor reports</li><li>Portfolio summary across sponsors</li><li>Renewal priority list</li></ul>
+        <a class="btn btn-ghost" href="mailto:raymond@rightsworth.com?subject=Renewal%20Season%20Pack">Book a call</a></div>
+      <div class="price rv d3"><span class="for">Brands</span><h3>Sponsor Value Audit</h3><div class="amt">£3,850<small>per deal</small></div>
+        <ul><li>One partnership, audited from your own CRM and sales data</li><li>CFO-ready summary</li><li>Independent of the rights holder</li></ul>
+        <a class="btn btn-ghost" href="mailto:raymond@rightsworth.com?subject=Sponsor%20Value%20Audit">Book a call</a></div>
+    </div>
+    <div class="guarantee rv">
+      <div class="shield"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l8 3v6c0 5-3.5 8-8 9-4.5-1-8-4-8-9V6z"/><path d="M8.5 12l2.5 2.5L15.5 10"/></svg></div>
+      <div><b>The outcome guarantee</b><p>If we can't link at least one commercial outcome (leads, codes, sales or customers) to the sponsorship, you pay 50%.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- PRINCIPLES -->
+<section class="sec light" style="padding-bottom:clamp(60px,8vw,100px)">
+  <div class="wrap">
+    <span class="eyebrow rv">Our rules</span>
+    <h2 class="display rv d1" style="font-size:clamp(38px,5vw,68px);margin:18px 0 clamp(36px,5vw,56px);max-width:16ch">Built to survive the finance meeting.</h2>
+    <div class="princ">
+      <div class="rv"><span class="n">01</span><b>Media value is never return</b><p>It's reported as context, beside ROI, never inside it.</p></div>
+      <div class="rv d1"><span class="n">02</span><b>No single ROI figure</b><p>Always a conservative and a base case, with the method shown.</p></div>
+      <div class="rv d2"><span class="n">03</span><b>Aggregate data only</b><p>Totals and exports. No personal data changes hands.</p></div>
+      <div class="rv d3"><span class="n">04</span><b>Your data stays yours</b><p>We never train AI models on customer data.</p></div>
+      <div class="rv d4"><span class="n">05</span><b>Fixed formulas</b><p>Same calculations every time, checked by hand.</p></div>
+    </div>
+  </div>
+</section>
+
+<div class="xnext"><div class="wrap"><button type="button" class="btn btn-ghost" data-go="faq">Next: FAQ <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button></div></div>
+</div>
+<div class="xpanel" id="panel-faq" role="tabpanel" aria-labelledby="tab-faq" data-p="faq" hidden>
+<!-- FAQ -->
+<section class="sec light" id="faq">
+  <div class="wrap faq-grid">
+    <div class="sticky">
+      <span class="eyebrow rv">FAQ</span>
+      <h2 class="display rv d1" style="margin-top:18px">Straight answers.</h2>
+      <p class="rv d2" style="color:var(--ink-2);margin-top:18px">Anything else? Email <a href="mailto:raymond@rightsworth.com" style="color:var(--green);font-weight:600">raymond@rightsworth.com</a></p>
+    </div>
+    <div class="rv">
+      <details open><summary>What data do you need from us?<span class="pm"></span></summary><div class="ans"><p>The exports you already have: the contract and delivery logs, promo-code reports, CRM lead totals, sales or account totals, and any exposure reports. Up to four sources for a single report.</p></div></details>
+      <details><summary>Do you need any personal or customer-level data?<span class="pm"></span></summary><div class="ans"><p>No. We work with totals and aggregates only. Nothing personal is shared, and we never train AI models on customer data.</p></div></details>
+      <details><summary>What if our tracking is weak?<span class="pm"></span></summary><div class="ans"><p>That's common, and it's exactly what the grades are for. We report what the evidence supports, say how strong it is, and give you a measurement plan so next season can reach grade A or B. If we can't link a single commercial outcome to the deal, you pay half.</p></div></details>
+      <details><summary>How is this different from exposure measurement?<span class="pm"></span></summary><div class="ans"><p>Exposure providers measure who saw the logo, and do it well. We use their reports as grade D context, then connect the partnership to the sponsor's leads, codes, sales and customers. The two work together.</p></div></details>
+      <details><summary>Which sports and properties do you cover?<span class="pm"></span></summary><div class="ans"><p>Any sport: soccer, baseball, basketball, motorsport, hockey, rugby, running and more. Clubs, leagues, tracks, venues, events and the brands that sponsor them.</p></div></details>
+      <details><summary>When should we start?<span class="pm"></span></summary><div class="ans"><p>Three to six months before the renewal meeting is ideal. That leaves time to gather the data, review the report and build the next-year package into your pitch.</p></div></details>
+    </div>
+  </div>
+</section>
+
+<div class="xnext"><div class="wrap"><button type="button" class="btn btn-ghost" data-go="network">Next: Opportunities network <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button></div></div>
+</div>
+<div class="xpanel" id="panel-network" role="tabpanel" aria-labelledby="tab-network" data-p="network" hidden>
+<section class="sec network" id="network">
+  <div class="wrap">
+    <div class="sec-head">
+      <div><span class="eyebrow">Opportunities network &middot; Coming soon</span><h2 class="display" style="margin-top:18px">Where proven partnerships find each other.</h2></div>
+      <p class="lead">Rights holders will list the assets they have to sell. Brands will list the outcomes they need. We'll match them, with every claim backed by Rightsworth evidence grades, so both sides start from proof instead of a pitch deck.</p>
+    </div>
+    <div class="net-grid">
+      <div class="net-col">
+        <span class="net-tag rh">For rights holders</span>
+        <h3>List your inventory</h3>
+        <ul class="ticks"><li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12l5 5L20 6"/></svg>Jersey patches, naming rights, LED, trackside, hospitality</li><li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12l5 5L20 6"/></svg>Show graded results from past partners</li><li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12l5 5L20 6"/></svg>Get matched with brands looking for your audience</li></ul>
+        <a class="btn btn-primary" href="mailto:raymond@rightsworth.com?subject=Opportunities%20network%20waitlist%20(rights%20holder)">Join the waitlist as a rights holder <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+      </div>
+      <div class="net-preview" aria-hidden="true">
+        <div class="np-card"><div class="np-top"><span class="np-chip">Asset</span><span class="np-soon">Preview</span></div><i class="np-l w70"></i><i class="np-l w45"></i><div class="np-row"><span class="np-g" style="background:var(--gB)">B</span><i class="np-l w30"></i><i class="np-l w20"></i></div></div>
+        <div class="np-link"><span></span><b>Match</b><span></span></div>
+        <div class="np-card"><div class="np-top"><span class="np-chip br">Brand brief</span><span class="np-soon">Preview</span></div><i class="np-l w60"></i><i class="np-l w50"></i><div class="np-row"><span class="np-g" style="background:var(--gA)">A</span><i class="np-l w35"></i><i class="np-l w15"></i></div></div>
+      </div>
+      <div class="net-col">
+        <span class="net-tag br">For sponsors &amp; brands</span>
+        <h3>Find assets that perform</h3>
+        <ul class="ticks"><li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12l5 5L20 6"/></svg>Post the audience, region and outcomes you need</li><li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12l5 5L20 6"/></svg>Compare opportunities by evidence, not just reach</li><li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12l5 5L20 6"/></svg>Build measurement into the deal from day one</li></ul>
+        <a class="btn btn-ghost" href="mailto:raymond@rightsworth.com?subject=Opportunities%20network%20waitlist%20(brand)">Join the waitlist as a brand <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+      </div>
+    </div>
+    <p class="net-note">Not live yet. Join the waitlist and we'll invite you first.</p>
+  </div>
+</section>
+<div class="xnext"><div class="wrap"><button type="button" class="btn btn-ghost" data-go="problem">Next: The problem <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button></div></div>
+</div>
+
+</section>
+
+<!-- FINAL CTA -->
+<section class="sec final">
+  <div class="bgfx" aria-hidden="true">
+    <svg viewBox="0 0 1400 400" fill="none" stroke="rgba(190,255,232,.35)" stroke-width="1.5"><path d="M0 400 L380 60 H1020 L1400 400"/><path d="M700 60 V400"/><ellipse cx="700" cy="220" rx="170" ry="60"/></svg>
+  </div>
+  <div class="wrap">
+    <span class="eyebrow rv">Renewal in the next six months?</span>
+    <h2 class="display rv d1">Walk in with <em>proof.</em></h2>
+    <p class="lead rv d2">Fifteen minutes is enough to tell if one of your sponsors is a fit, and what evidence you already have.</p>
+    <div class="cta-row rv d3">
+      <a class="btn btn-primary" href="mailto:raymond@rightsworth.com?subject=Book%20a%2015-minute%20call">Book a 15-minute call
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+      <a class="btn btn-ghost" href="rightsworth-sample-report.pdf" target="_blank" rel="noopener">Download the sample report</a>
+    </div>
+    <p class="mail rv d4">Or email <a href="mailto:raymond@rightsworth.com">raymond@rightsworth.com</a></p>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <a href="#top" class="logo" aria-label="Rightsworth home"><svg viewBox="0 0 64 64" aria-hidden="true"><rect width="64" height="64" rx="14" fill="#0f5c4c"/><path d="M20 46V18h13.5c6 0 9.7 3.4 9.7 8.6 0 4-2.2 6.8-5.8 8L44.6 46h-7l-6.2-10.6H26V46h-6zm6-15.6h6.8c2.7 0 4.3-1.4 4.3-3.7s-1.6-3.6-4.3-3.6H26v7.3z" fill="#fff"/><rect x="20" y="50" width="24.6" height="3.2" rx="1.6" fill="#7fd1bd"/></svg>Rightsworth</a>
+    <nav aria-label="Footer"><a href="#problem">The problem</a><a href="#grades">Evidence grades</a><a href="#report">The report</a><a href="#pricing">Pricing</a><a href="#faq">FAQ</a><a href="mailto:raymond@rightsworth.com">Contact</a><a href="https://www.linkedin.com/company/rightsworth/" target="_blank" rel="noopener">LinkedIn</a><a href="privacy.html">Privacy &amp; cookies</a><a href="terms.html">Terms</a></nav>
+    <div class="foot-note">&copy; <span id="yr">2026</span> Rightsworth. Proof of what your sponsorship is worth. We use aggregate data only and never train AI models on customer data. Sample figures on this site are from a fictional club and sponsor.<br><span class="legal">Rightsworth is a trading name of NextGenMediaGroup Ltd, registered in England &amp; Wales, company no. 12796511. Registered office: Studio 1 Grosvenor House, 3 Chapel Street, Congleton, Cheshire, CW12 4AB, United Kingdom. Contact: <a href="mailto:raymond@rightsworth.com">raymond@rightsworth.com</a></span></div>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  document.getElementById('yr').textContent = new Date().getFullYear();
+
+  // Nav
+  var nav = document.getElementById('nav'), burger = document.getElementById('burger');
+  function onScroll(){ nav.classList.toggle('scrolled', window.scrollY > 20); }
+  window.addEventListener('scroll', onScroll, {passive:true}); onScroll();
+  burger.addEventListener('click', function(){
+    var o = nav.classList.toggle('open'); burger.setAttribute('aria-expanded', o);
+  });
+  document.querySelectorAll('#mmenu a').forEach(function(a){ a.addEventListener('click', function(){ nav.classList.remove('open'); burger.setAttribute('aria-expanded', false); }); });
+
+  // Count up
+  function fmt(v, el){
+    var dec = +(el.dataset.dec||0);
+    var s = v.toFixed(dec);
+    if (el.dataset.sep) s = Math.round(v).toLocaleString('en-GB');
+    return s;
+  }
+  function count(el){
+    if (el.dataset.done) return; el.dataset.done = 1;
+    var end = parseFloat(el.dataset.count), t0 = null, dur = 1600;
+    if (reduce){ el.textContent = fmt(end, el); return; }
+    function step(t){ if(!t0) t0 = t; var p = Math.min((t - t0)/dur, 1); var e = 1 - Math.pow(1-p, 3);
+      el.textContent = fmt(end*e, el); if (p < 1) requestAnimationFrame(step); }
+    requestAnimationFrame(step);
+  }
+
+  // Dashboard + bars
+  function fireDash(){
+    var g = document.getElementById('gval'); if (g) g.style.strokeDashoffset = (339.3*(1-.88)).toFixed(1);
+    var r = document.getElementById('roifill'); if (r) r.style.width = ((114-98)/150*100).toFixed(1)+'%';
+    document.querySelectorAll('.bar .f').forEach(function(f){ f.style.width = f.dataset.w + '%'; });
+  }
+  function fireRange(){ document.querySelectorAll('#rviz .stack i').forEach(function(i){ i.style.width = i.dataset.w + '%'; }); }
+
+  // Reveal
+  var io = 'IntersectionObserver' in window ? new IntersectionObserver(function(es){
+    es.forEach(function(e){
+      if (!e.isIntersecting) return;
+      var el = e.target; el.classList.add('in');
+      el.querySelectorAll('[data-count]').forEach(count);
+      if (el.matches('[data-count]')) count(el);
+      if (el.id === 'dash' || el.querySelector('#dash')) fireDash();
+      if (el.id === 'roi') fireRange();
+      io.unobserve(el);
+    });
+  }, {threshold:.15, rootMargin:'0px 0px -40px 0px'}) : null;
+  document.querySelectorAll('.rv').forEach(function(el){ io ? io.observe(el) : el.classList.add('in'); });
+  if (!io){ document.querySelectorAll('[data-count]').forEach(count); fireDash(); fireRange(); }
+  setTimeout(function(){ var d = document.getElementById('dash'); if (d && d.getBoundingClientRect().top < innerHeight){ fireDash(); d.querySelectorAll('[data-count]').forEach(count);} }, 400);
+
+
+  // Layout + video hero
+  (function(){
+    var qs = new URLSearchParams(location.search), L = qs.get('hero');
+    if (['banner','split','cinema'].indexOf(L) < 0) L = 'cinema'; else document.body.classList.add('show-switch');
+    document.body.classList.remove('L-cinema'); document.body.classList.add('L-' + L);
+    document.querySelectorAll('.lay-switch a').forEach(function(a){ if (a.dataset.l === L) a.classList.add('on'); });
+    if (L === 'cinema') setTimeout(function(){ document.body.classList.add('intro-done'); }, reduce ? 0 : 2600);
+
+    var v = document.getElementById('hv'); if (!v) return;
+    var m = v.parentElement, r = m.getBoundingClientRect();
+    var portrait = r.height > r.width * 1.05;
+    var CAP = portrait ? [
+      ['Soccer','Front-of-shirt jersey sponsor'],['American football','Field & end-zone branding'],['Motorsport','Pit-lane & car livery'],
+      ['Basketball','Courtside & stanchion signage'],['Baseball','Outfield wall & scoreboard signs'],['Soccer','Perimeter LED ring'],['Soccer','Stadium LED ring & screens']
+    ] : [
+      ['Soccer','Stadium LED ring & screens'],['Soccer','Front-of-shirt jersey sponsor'],['Motorsport','Pit-lane & car livery'],
+      ['Basketball','Courtside & stanchion signage'],['Baseball','Outfield wall & scoreboard signs'],['Soccer','Pitch-side LED boards'],
+      ['Motorsport','Trackside barriers & big screens'],['American football','Field & end-zone branding'],['Motorsport','Track & kerb branding'],
+      ['Soccer','Perimeter LED ring'],['Baseball','Ballpark field branding']
+    ];
+    v.poster = portrait ? 'hero-mobile-poster.jpg' : 'hero-poster.jpg';
+    if (!reduce){ v.src = portrait ? 'hero-mobile.mp4' : 'hero.mp4'; var pp = v.play(); if (pp && pp.catch) pp.catch(function(){}); }
+    var prog = document.getElementById('prog'); CAP.forEach(function(){ prog.appendChild(document.createElement('i')); });
+    var SEG = 2.3, cur = -1, bars = prog.querySelectorAll('i');
+    var tgt = [document.getElementById('chipSport'), document.getElementById('chipAsset'), document.getElementById('capAsset')];
+    function set(i){
+      if (i === cur) return; cur = i;
+      tgt.forEach(function(e){ e.classList.add('swap'); });
+      setTimeout(function(){ tgt[0].textContent = CAP[i][0]; tgt[1].textContent = CAP[i][1]; tgt[2].textContent = CAP[i][0] + ' · ' + CAP[i][1]; tgt.forEach(function(e){ e.classList.remove('swap'); }); }, 180);
+    }
+    function tick(){
+      var t = v.currentTime || 0, i = Math.min(Math.floor(t / SEG), CAP.length - 1);
+      set(i);
+      bars.forEach(function(b, k){ b.style.setProperty('--p', k < i ? 1 : (k === i ? Math.min((t - i*SEG)/SEG, 1) : 0)); });
+      requestAnimationFrame(tick);
+    }
+    set(0); requestAnimationFrame(tick);
+  })();
+
+
+  // Explore tabs: one section group at a time
+  (function(){
+    var MAP = {problem:'problem',outcomes:'problem',grades:'grades',roi:'grades',check:'check',report:'report',process:'report',who:'who',pricing:'pricing',faq:'faq',network:'network'};
+    var tabs = document.querySelectorAll('.xtab'), panels = document.querySelectorAll('.xpanel'), bar = document.getElementById('xbar'), cur = null;
+    function show(k, scroll, anchor){
+      if (!k) return;
+      if (k !== cur){
+        cur = k;
+        tabs.forEach(function(t){ var on = t.dataset.p === k; t.setAttribute('aria-selected', on); t.tabIndex = on ? 0 : -1; if (on && t.scrollIntoView && innerWidth < 1080) t.scrollIntoView({block:'nearest', inline:'center'}); });
+        panels.forEach(function(p){ p.hidden = p.dataset.p !== k; });
+      }
+      if (scroll){
+        var target = anchor && anchor !== k && document.getElementById(anchor);
+        var y = target ? target.getBoundingClientRect().top + scrollY - 160 : document.getElementById('explore').getBoundingClientRect().top + scrollY - 72;
+        window.scrollTo({top: y, behavior: reduce ? 'auto' : 'smooth'});
+        setTimeout(function(){ var y2 = target ? target.getBoundingClientRect().top + scrollY - 160 : document.getElementById('explore').getBoundingClientRect().top + scrollY - 72; if (Math.abs(y2 - scrollY) > 40) window.scrollTo({top: y2, behavior: 'auto'}); }, 900);
+      }
+    }
+    tabs.forEach(function(t, i){
+      t.addEventListener('click', function(){ show(t.dataset.p, true); history.replaceState(null, '', '#' + t.dataset.p); });
+      t.addEventListener('keydown', function(e){
+        var d = e.key === 'ArrowRight' ? 1 : e.key === 'ArrowLeft' ? -1 : 0; if (!d) return;
+        e.preventDefault(); var n = tabs[(i + d + tabs.length) % tabs.length]; n.focus(); n.click();
+      });
+    });
+    document.querySelectorAll('[data-go]').forEach(function(b){ b.addEventListener('click', function(){ show(b.dataset.go, true); history.replaceState(null, '', '#' + b.dataset.go); }); });
+    document.addEventListener('click', function(e){
+      var a = e.target.closest && e.target.closest('a[href^="#"]'); if (!a) return;
+      var id = a.getAttribute('href').slice(1); if (!MAP[id]) return;
+      e.preventDefault(); show(MAP[id], true, id); history.replaceState(null, '', '#' + id);
+    });
+    var h = location.hash.slice(1);
+    show(MAP[h] || 'problem', false);
+    if (MAP[h]) setTimeout(function(){ show(MAP[h], true, h); }, 300);
+    addEventListener('hashchange', function(){ var k = location.hash.slice(1); if (MAP[k]) show(MAP[k], true, k); });
+  })();
+
+  // Scroll progress
+  (function(){ var b = document.getElementById('sprog'); function u(){ var h = document.documentElement; var p = h.scrollTop / Math.max(1, h.scrollHeight - h.clientHeight); b.style.transform = 'scaleX(' + p.toFixed(4) + ')'; } addEventListener('scroll', u, {passive:true}); u(); })();
+
+  // Evidence check
+  (function(){
+    var A = {}, qsEl = document.querySelectorAll('#qs .q'), ROLE = 'rh';
+    var TODO = {
+      rh: {code:'Give the sponsor its own promo code or tracked link', crm:'Get a CRM source tag set up for partnership leads', value:'Agree the value of one customer or lead in writing', ctrl:'Pick a comparison region or period', sales:'Ask the sponsor for season sales or account totals'},
+      br: {code:'Ask the rights holder for a dedicated code or landing page', crm:'Tag partnership leads in your CRM from day one', value:'Get finance to sign off the value of one customer', ctrl:'Hold back one region or period as a comparison', sales:'Pull sales totals for the partnership period'}
+    };
+    var DESC = {
+      rh: {A:'You can compare against no sponsorship and value what was tracked. That is the strongest renewal case there is.', B:'Tracked outcomes with an agreed value. The sponsor\u2019s finance team will take this seriously.', C:'Something moved during the deal, but it is hard to tie to the sponsorship yet.', D:'Today the renewal case rests on impressions and media value. That is what finance cuts first.'},
+      br: {A:'You can prove what the deal caused, not just what it reached. That is the case finance signs off on.', B:'Tracked outcomes with a value attached. You can defend the spend.', C:'Results moved during the deal, but you can\u2019t yet show the sponsorship caused them.', D:'Right now the deal is justified by impressions and media value. That is the first line finance cuts.'}
+    };
+    var roleBtns = document.querySelectorAll('.role button');
+    function setRole(r){
+      ROLE = r;
+      roleBtns.forEach(function(b){ b.setAttribute('aria-selected', b.dataset.role === r); });
+      qsEl.forEach(function(q){ q.querySelector('.qt').textContent = q.dataset[r === 'rh' ? 'rq' : 'bq']; q.querySelector('small').textContent = q.dataset[r === 'rh' ? 'rs' : 'bs']; });
+      document.getElementById('chkH').textContent = r === 'rh' ? 'How strong is your sponsor\u2019s evidence?' : 'Can you prove what your sponsorship returned?';
+      var cta = document.getElementById('rcta'), note = document.getElementById('rnote');
+      if (r === 'rh') { cta.textContent = 'Get it graded properly'; cta.href = 'mailto:raymond@rightsworth.com?subject=Evidence%20check%20(rights%20holder)%20-%20book%20a%20call'; note.textContent = 'Our Single Sponsor Report turns this into a renewal-ready case.'; }
+      else { cta.textContent = 'Book a Sponsor Value Audit call'; cta.href = 'mailto:raymond@rightsworth.com?subject=Evidence%20check%20(brand)%20-%20Sponsor%20Value%20Audit'; note.textContent = 'The Sponsor Value Audit grades one partnership from your own CRM and sales data.'; }
+      render();
+    }
+    roleBtns.forEach(function(b){ b.addEventListener('click', function(){ setRole(b.dataset.role); }); });
+    var COL = {A:'var(--gA)',B:'var(--gB)',C:'var(--gC)',D:'var(--gD)'}, GLOW = {A:'rgba(67,224,176,.45)',B:'rgba(106,168,255,.45)',C:'rgba(242,193,78,.4)',D:'rgba(139,156,163,.35)'};
+    var res = document.getElementById('result');
+    function render(){
+      var n = Object.keys(A).length;
+      document.getElementById('rcnt').textContent = n + ' of 5 answered';
+      if (!n) return;
+      var tracked = A.code || A.crm, g, t, d, todo = [];
+      if (tracked && A.ctrl && A.value) { g='A'; t='Incremental-grade evidence'; }
+      else if (tracked && A.value) { g='B'; t='Attributed evidence'; }
+      else if (tracked || A.sales) { g='C'; t='Associated evidence'; }
+      else { g='D'; t='Exposure only'; }
+      d = DESC[ROLE][g];
+      ['code','crm','value','ctrl','sales'].forEach(function(k){ if (!A[k]) todo.push(TODO[ROLE][k]); });
+      var rg = document.getElementById('rg'); rg.textContent = g;
+      res.style.setProperty('--cc', COL[g]); res.style.setProperty('--c', GLOW[g]);
+      var lvl = {A:4,B:3,C:2,D:1}[g];
+      res.querySelectorAll('.meter i').forEach(function(i,k){ i.style.background = k < lvl ? COL[g] : ''; });
+      document.getElementById('rt').textContent = t; document.getElementById('rd').textContent = d;
+      document.getElementById('rtodo').innerHTML = todo.slice(0,3).map(function(x){ return '<li>'+x+'</li>'; }).join('');
+      rg.animate && !reduce && rg.animate([{transform:'scale(.85)',opacity:.4},{transform:'scale(1)',opacity:1}],{duration:380,easing:'cubic-bezier(.2,.8,.2,1)'});
+    }
+    qsEl.forEach(function(q){
+      q.querySelectorAll('button').forEach(function(b){
+        b.addEventListener('click', function(){
+          q.querySelectorAll('button').forEach(function(x){ x.setAttribute('aria-pressed', x === b); });
+          A[q.dataset.k] = b.classList.contains('y'); q.classList.add('ans'); render();
+        });
+      });
+    });
+  })();
+
+  // Grades
+  var G = {
+    A:{c:'var(--gA)',t:'Incremental',d:'The result is compared against a period, region or group that did not have the sponsorship. The difference is what the deal caused.',ex:'60 new accounts in the club region above a matched control region',roi:'Yes, in both cases'},
+    B:{c:'var(--gB)',t:'Attributed',d:'The result is tracked directly to the partnership through something only it could produce: a promo code, a unique link, a CRM source tag.',ex:'452 accounts opened with the sponsor’s promo code',roi:'Yes, in both cases'},
+    C:{c:'var(--gC)',t:'Associated',d:'The result moved during the partnership, but nothing tracked it to the deal. We report it, and say clearly that it is weaker evidence.',ex:'Regional deposits grew above trend during the season',roi:'Half-credit, base case only'},
+    D:{c:'var(--gD)',t:'Exposure only',d:'Impressions, media value and engagement. Useful context about reach, but it shows what was seen, not what was sold.',ex:'16.9M impressions, £543K media value',roi:'Never. Context only'}
+  };
+  var panel = document.getElementById('gpanel'), body = document.getElementById('gbody');
+  function show(k){
+    var g = G[k]; panel.style.setProperty('--c', g.c);
+    body.classList.remove('fade-swap'); void body.offsetWidth; body.classList.add('fade-swap');
+    body.innerHTML = '<div class="big">'+k+'</div><h3>'+g.t+'</h3><p>'+g.d+'</p><dl><div><dt>Example (sample report)</dt><dd>'+g.ex+'</dd></div><div><dt>Counts toward ROI?</dt><dd>'+g.roi+'</dd></div></dl>';
+    document.querySelectorAll('.gtab').forEach(function(b){ b.setAttribute('aria-selected', b.dataset.g === k); });
+  }
+  document.querySelectorAll('.gtab').forEach(function(b){
+    b.addEventListener('click', function(){ show(b.dataset.g); stopAuto(); });
+    b.addEventListener('keydown', function(e){
+      var ks = ['A','B','C','D'], i = ks.indexOf(b.dataset.g);
+      if (e.key === 'ArrowDown' || e.key === 'ArrowRight'){ e.preventDefault(); var n = ks[(i+1)%4]; show(n); document.querySelector('.gtab[data-g="'+n+'"]').focus(); stopAuto(); }
+      if (e.key === 'ArrowUp' || e.key === 'ArrowLeft'){ e.preventDefault(); var p = ks[(i+3)%4]; show(p); document.querySelector('.gtab[data-g="'+p+'"]').focus(); stopAuto(); }
+    });
+  });
+  show('A');
+  var auto = null, cur = 0;
+  function stopAuto(){ if (auto){ clearInterval(auto); auto = null; } }
+  if (!reduce && 'IntersectionObserver' in window){
+    new IntersectionObserver(function(es){ es.forEach(function(e){
+      if (e.isIntersecting && auto === null && !panel.dataset.touched){ auto = setInterval(function(){ cur = (cur+1)%4; show('ABCD'[cur]); }, 4200); }
+      else if (!e.isIntersecting) stopAuto();
+    }); }, {threshold:.5}).observe(panel);
+    document.querySelectorAll('.gtab').forEach(function(b){ b.addEventListener('click', function(){ panel.dataset.touched = 1; }); });
+  }
+})();
+</script>
+</body>
+</html>
