@@ -1,0 +1,358 @@
+club,from_season,to_season,league_from,league_to,moved_division,sponsor_from,sponsor_to,outcome
+Barnsley,2021–22,2022–23,Championship,League One,True,The Investment Room,ROTATING (various local companies and charities),excluded
+Barnsley,2022–23,2023–24,League One,League One,False,ROTATING (various local companies and charities),US Mobile,excluded
+Barnsley,2023–24,2024–25,League One,League One,False,US Mobile,Gleeson Homes,changed
+Barnsley,2024–25,2025–26,League One,League One,False,Gleeson Homes,The Investment Room,changed
+Birmingham City,2021–22,2022–23,Championship,Championship,False,BoyleSports,BoyleSports,same
+Birmingham City,2022–23,2023–24,Championship,Championship,False,BoyleSports,Undefeated,changed
+Birmingham City,2023–24,2024–25,Championship,League One,True,Undefeated,Undefeated,same
+Birmingham City,2024–25,2025–26,League One,Championship,True,Undefeated,Undefeated,same
+Blackburn Rovers,2021–22,2022–23,Championship,Championship,False,Totally Wicked,Totally Wicked,same
+Blackburn Rovers,2022–23,2023–24,Championship,Championship,False,Totally Wicked,Totally Wicked,same
+Blackburn Rovers,2023–24,2024–25,Championship,Championship,False,Totally Wicked,Watson Ramsbottom Solicitors,changed
+Blackburn Rovers,2024–25,2025–26,Championship,Championship,False,Watson Ramsbottom Solicitors,Watson Ramsbottom Solicitors,same
+Blackpool,2021–22,2022–23,Championship,Championship,False,VisitBlackpool,Utilita,changed
+Blackpool,2022–23,2023–24,Championship,League One,True,Utilita,LeoVegas,changed
+Blackpool,2023–24,2024–25,League One,League One,False,LeoVegas,TreadTracker.com,changed
+Blackpool,2024–25,2025–26,League One,League One,False,TreadTracker.com,TreadTracker.com,same
+Bristol City,2021–22,2022–23,Championship,Championship,False,MansionBet,Huboo,changed
+Bristol City,2022–23,2023–24,Championship,Championship,False,Huboo,Huboo,same
+Bristol City,2023–24,2024–25,Championship,Championship,False,Huboo,Huboo,same
+Bristol City,2024–25,2025–26,Championship,Championship,False,Huboo,Fever,changed
+Cardiff City,2021–22,2022–23,Championship,Championship,False,Visit Malaysia,Visit Malaysia,same
+Cardiff City,2022–23,2023–24,Championship,Championship,False,Visit Malaysia,Visit Malaysia,same
+Cardiff City,2023–24,2024–25,Championship,Championship,False,Visit Malaysia,Visit Malaysia,same
+Cardiff City,2024–25,2025–26,Championship,League One,True,Visit Malaysia,Visit Malaysia,same
+Coventry City,2021–22,2022–23,Championship,Championship,False,BoyleSports,BoyleSports,same
+Coventry City,2022–23,2023–24,Championship,Championship,False,BoyleSports,King of Shaves,changed
+Coventry City,2023–24,2024–25,Championship,Championship,False,King of Shaves,Monzo,changed
+Coventry City,2024–25,2025–26,Championship,Championship,False,Monzo,Monzo,same
+Derby County,2021–22,2022–23,Championship,League One,True,32Red,NSPCC,changed
+Derby County,2022–23,2023–24,League One,League One,False,NSPCC,Host & Stay,changed
+Derby County,2023–24,2024–25,League One,Championship,True,Host & Stay,FanHub,changed
+Derby County,2024–25,2025–26,Championship,Championship,False,FanHub,FanHub,same
+Huddersfield Town,2021–22,2022–23,Championship,Championship,False,Utilita,Utilita,same
+Huddersfield Town,2022–23,2023–24,Championship,Championship,False,Utilita,Utilita,same
+Huddersfield Town,2023–24,2024–25,Championship,League One,True,Utilita,Utilita,same
+Huddersfield Town,2024–25,2025–26,League One,League One,False,Utilita,HEYDUDE,changed
+Hull City,2021–22,2022–23,Championship,Championship,False,Giacom,Corendon Airlines,changed
+Hull City,2022–23,2023–24,Championship,Championship,False,Corendon Airlines,Corendon Airlines,same
+Hull City,2023–24,2024–25,Championship,Championship,False,Corendon Airlines,Corendon Airlines,same
+Hull City,2024–25,2025–26,Championship,Championship,False,Corendon Airlines,Corendon Airlines,same
+Luton Town,2021–22,2022–23,Championship,Championship,False,Utilita,Utilita,same
+Luton Town,2024–25,2025–26,Championship,League One,True,Utilita,Capital Sky,changed
+Middlesbrough,2021–22,2022–23,Championship,Championship,False,32Red,Unibet,changed
+Middlesbrough,2022–23,2023–24,Championship,Championship,False,Unibet,Unibet,same
+Middlesbrough,2023–24,2024–25,Championship,Championship,False,Unibet,Unibet,same
+Middlesbrough,2024–25,2025–26,Championship,Championship,False,Unibet,Unibet,same
+Millwall,2021–22,2022–23,Championship,Championship,False,Huski Chocolate,Huski Chocolate,same
+Millwall,2022–23,2023–24,Championship,Championship,False,Huski Chocolate,Huski Chocolate,same
+Millwall,2023–24,2024–25,Championship,Championship,False,Huski Chocolate,MyGuava,changed
+Millwall,2024–25,2025–26,Championship,Championship,False,MyGuava,Wiggett Group,changed
+Peterborough United,2021–22,2022–23,Championship,League One,True,Mick George Group,Mick George Group,same
+Peterborough United,2022–23,2023–24,League One,League One,False,Mick George Group,Mick George Group,same
+Peterborough United,2023–24,2024–25,League One,League One,False,Mick George Group,Mick George Group,same
+Peterborough United,2024–25,2025–26,League One,League One,False,Mick George Group,Mick George Group,same
+Preston North End,2021–22,2022–23,Championship,Championship,False,PAR Group,PAR Group,same
+Preston North End,2022–23,2023–24,Championship,Championship,False,PAR Group,PAR Group,same
+Preston North End,2023–24,2024–25,Championship,Championship,False,PAR Group,PAR Group,same
+Preston North End,2024–25,2025–26,Championship,Championship,False,PAR Group,SpudBros,changed
+Queens Park Rangers,2021–22,2022–23,Championship,Championship,False,Ashville Holdings,Convivia Group,changed
+Queens Park Rangers,2022–23,2023–24,Championship,Championship,False,Convivia Group,Convivia Group,same
+Queens Park Rangers,2023–24,2024–25,Championship,Championship,False,Convivia Group,CopyBet,changed
+Queens Park Rangers,2024–25,2025–26,Championship,Championship,False,CopyBet,CopyBet,same
+Reading,2021–22,2022–23,Championship,Championship,False,Select Car Leasing,Select Car Leasing,same
+Reading,2022–23,2023–24,Championship,League One,True,Select Car Leasing,Select Car Leasing,same
+Reading,2023–24,2024–25,League One,League One,False,Select Car Leasing,Select Car Leasing,same
+Reading,2024–25,2025–26,League One,League One,False,Select Car Leasing,Select Car Leasing,same
+Sheffield United,2021–22,2022–23,Championship,Championship,False,Randox,Randox,same
+Sheffield United,2024–25,2025–26,Championship,Championship,False,Maneki,Midnite,changed
+Stoke City,2021–22,2022–23,Championship,Championship,False,bet365,bet365,same
+Stoke City,2022–23,2023–24,Championship,Championship,False,bet365,bet365,same
+Stoke City,2023–24,2024–25,Championship,Championship,False,bet365,bet365,same
+Stoke City,2024–25,2025–26,Championship,Championship,False,bet365,bet365,same
+Swansea City,2021–22,2022–23,Championship,Championship,False,Swansea University,Westacres,changed
+Swansea City,2022–23,2023–24,Championship,Championship,False,Westacres,Reviva Coffee,changed
+Swansea City,2023–24,2024–25,Championship,Championship,False,Reviva Coffee,Reviva Coffee,same
+Swansea City,2024–25,2025–26,Championship,Championship,False,Reviva Coffee,Reviva Coffee,same
+West Bromwich Albion,2021–22,2022–23,Championship,Championship,False,Ideal Heating,Ideal Heating,same
+West Bromwich Albion,2022–23,2023–24,Championship,Championship,False,Ideal Heating,Ideal Heating,same
+West Bromwich Albion,2023–24,2024–25,Championship,Championship,False,Ideal Heating,Ideal Heating,same
+West Bromwich Albion,2024–25,2025–26,Championship,Championship,False,Ideal Heating,Ideal Heating,same
+Norwich City,2022–23,2023–24,Championship,Championship,False,Lotus Cars,Lotus Cars,same
+Norwich City,2023–24,2024–25,Championship,Championship,False,Lotus Cars,Blakely Clothing,changed
+Norwich City,2024–25,2025–26,Championship,Championship,False,Blakely Clothing,Blakely Clothing,same
+Rotherham United,2021–22,2022–23,League One,Championship,True,IPM Group,IPM Group,same
+Rotherham United,2022–23,2023–24,Championship,Championship,False,IPM Group,Rotherham Hospice,changed
+Rotherham United,2023–24,2024–25,Championship,League One,True,Rotherham Hospice,Bluebell Wood,changed
+Rotherham United,2024–25,2025–26,League One,League One,False,Bluebell Wood,Bluebell Wood,same
+Sunderland,2021–22,2022–23,League One,Championship,True,Great Annual Savings Group,Spreadex Sports,changed
+Sunderland,2022–23,2023–24,Championship,Championship,False,Spreadex Sports,Spreadex Sports,same
+Sunderland,2023–24,2024–25,Championship,Championship,False,Spreadex Sports,Spreadex Sports,same
+Watford,2022–23,2023–24,Championship,Championship,False,Stake.com,MrQ.com,changed
+Watford,2023–24,2024–25,Championship,Championship,False,MrQ.com,MrQ.com,same
+Watford,2024–25,2025–26,Championship,Championship,False,MrQ.com,MrQ.com,same
+Wigan Athletic,2021–22,2022–23,League One,Championship,True,EPIC.gi,Big Help Project,changed
+Wigan Athletic,2022–23,2023–24,Championship,League One,True,Big Help Project,Smurfit Westrock,changed
+Wigan Athletic,2023–24,2024–25,League One,League One,False,Smurfit Westrock,Smurfit Westrock,same
+Wigan Athletic,2024–25,2025–26,League One,League One,False,Smurfit Westrock,Smurfit Westrock,same
+Ipswich Town,2021–22,2022–23,League One,League One,False,Ed Sheeran,Ed Sheeran,same
+Ipswich Town,2022–23,2023–24,League One,Championship,True,Ed Sheeran,+–=÷× Tour,changed
+Leeds United,2023–24,2024–25,Championship,Championship,False,BOXT,Red Bull,changed
+Plymouth Argyle,2021–22,2022–23,League One,League One,False,Ginsters,Project 35,changed
+Plymouth Argyle,2022–23,2023–24,League One,Championship,True,Project 35,Bond Timber,changed
+Plymouth Argyle,2023–24,2024–25,Championship,Championship,False,Bond Timber,Classic Builders,changed
+Plymouth Argyle,2024–25,2025–26,Championship,League One,True,Classic Builders,Classic Builders,same
+Sheffield Wednesday,2021–22,2022–23,League One,League One,False,Chansiri,Host & Stay,changed
+Sheffield Wednesday,2022–23,2023–24,League One,Championship,True,Host & Stay,Cirata,changed
+Sheffield Wednesday,2023–24,2024–25,Championship,Championship,False,Cirata,Mockba Modular,changed
+Sheffield Wednesday,2024–25,2025–26,Championship,Championship,False,Mockba Modular,Mr Vegas,changed
+Oxford United,2021–22,2022–23,League One,League One,False,EB Charging,Bangkok Glass,changed
+Oxford United,2022–23,2023–24,League One,League One,False,Bangkok Glass,Bangkok Glass,same
+Oxford United,2023–24,2024–25,League One,Championship,True,Bangkok Glass,Baxi,changed
+Oxford United,2024–25,2025–26,Championship,Championship,False,Baxi,Baxi,same
+Portsmouth,2021–22,2022–23,League One,League One,False,University of Portsmouth,University of Portsmouth,same
+Portsmouth,2022–23,2023–24,League One,League One,False,University of Portsmouth,University of Portsmouth,same
+Portsmouth,2023–24,2024–25,League One,Championship,True,University of Portsmouth,University of Portsmouth,same
+Portsmouth,2024–25,2025–26,Championship,Championship,False,University of Portsmouth,University of Portsmouth,same
+Charlton Athletic,2021–22,2022–23,League One,League One,False,KW Holdings,RSK Group,changed
+Charlton Athletic,2022–23,2023–24,League One,League One,False,RSK Group,RSK Group,same
+Charlton Athletic,2023–24,2024–25,League One,League One,False,RSK Group,RSK Group,same
+Charlton Athletic,2024–25,2025–26,League One,Championship,True,RSK Group,RSK Group,same
+Wrexham,2022–23,2023–24,National League,League Two,True,TikTok,United Airlines,changed
+Wrexham,2023–24,2024–25,League Two,League One,True,United Airlines,United Airlines,same
+Wrexham,2024–25,2025–26,League One,Championship,True,United Airlines,United Airlines,same
+Accrington Stanley,2021–22,2022–23,League One,League One,False,Wham,Wham,same
+Accrington Stanley,2022–23,2023–24,League One,League Two,True,Wham,Wham,same
+Accrington Stanley,2023–24,2024–25,League Two,League Two,False,Wham,Wham,same
+Accrington Stanley,2024–25,2025–26,League Two,League Two,False,Wham,Wham,same
+AFC Wimbledon,2021–22,2022–23,League One,League Two,True,Sports Interactive,Sports Interactive,same
+AFC Wimbledon,2022–23,2023–24,League Two,League Two,False,Sports Interactive,Sports Interactive,same
+AFC Wimbledon,2023–24,2024–25,League Two,League Two,False,Sports Interactive,War Child,changed
+AFC Wimbledon,2024–25,2025–26,League Two,League One,True,War Child,Football Manager,changed
+Bolton Wanderers,2021–22,2022–23,League One,League One,False,Home Bargains,ServiceMyCar.com,changed
+Bolton Wanderers,2022–23,2023–24,League One,League One,False,ServiceMyCar.com,Victorian Plumbing,changed
+Bolton Wanderers,2023–24,2024–25,League One,League One,False,Victorian Plumbing,Victorian Plumbing,same
+Bolton Wanderers,2024–25,2025–26,League One,League One,False,Victorian Plumbing,Victorian Plumbing,same
+Burton Albion,2021–22,2022–23,League One,League One,False,Prestec UK Ltd,Prestec UK Ltd,same
+Burton Albion,2022–23,2023–24,League One,League One,False,Prestec UK Ltd,Prestec UK Ltd,same
+Burton Albion,2023–24,2024–25,League One,League One,False,Prestec UK Ltd,Burton Kia,changed
+Burton Albion,2024–25,2025–26,League One,League One,False,Burton Kia,Burton Kia,same
+Cambridge United,2021–22,2022–23,League One,League One,False,Mick George Group,Mick George Group,same
+Cambridge United,2022–23,2023–24,League One,League One,False,Mick George Group,BrewBoard,changed
+Cambridge United,2023–24,2024–25,League One,League One,False,BrewBoard,BrewBoard,same
+Cambridge United,2024–25,2025–26,League One,League Two,True,BrewBoard,Brooks,changed
+Cheltenham Town,2021–22,2022–23,League One,League One,False,Mira Showers,Mira Showers,same
+Cheltenham Town,2022–23,2023–24,League One,League One,False,Mira Showers,Mira Showers,same
+Cheltenham Town,2023–24,2024–25,League One,League Two,True,Mira Showers,Mira Showers,same
+Cheltenham Town,2024–25,2025–26,League Two,League Two,False,Mira Showers,Mira Showers,same
+Crewe Alexandra,2021–22,2022–23,League One,League Two,True,Mornflake,Mornflake,same
+Crewe Alexandra,2022–23,2023–24,League Two,League Two,False,Mornflake,Mornflake,same
+Crewe Alexandra,2023–24,2024–25,League Two,League Two,False,Mornflake,Mornflake,same
+Crewe Alexandra,2024–25,2025–26,League Two,League Two,False,Mornflake,Whitby Morrison,changed
+Doncaster Rovers,2021–22,2022–23,League One,League Two,True,LNER,Eco-Power Group,changed
+Doncaster Rovers,2022–23,2023–24,League Two,League Two,False,Eco-Power Group,Eco-Power Group,same
+Doncaster Rovers,2023–24,2024–25,League Two,League Two,False,Eco-Power Group,Eco-Power Group,same
+Doncaster Rovers,2024–25,2025–26,League Two,League One,True,Eco-Power Group,Eco-Power Group,same
+Fleetwood Town,2021–22,2022–23,League One,League One,False,BES Utilities,BES Utilities,same
+Fleetwood Town,2022–23,2023–24,League One,League One,False,BES Utilities,BES Utilities,same
+Fleetwood Town,2023–24,2024–25,League One,League Two,True,BES Utilities,Ruby Energy,changed
+Fleetwood Town,2024–25,2025–26,League Two,League Two,False,Ruby Energy,Ruby Energy,same
+Gillingham,2021–22,2022–23,League One,League Two,True,MEMS Power Generation,MEMS Power Generation,same
+Gillingham,2022–23,2023–24,League Two,League Two,False,MEMS Power Generation,Bauvill,changed
+Gillingham,2023–24,2024–25,League Two,League Two,False,Bauvill,Bauvill,same
+Gillingham,2024–25,2025–26,League Two,League Two,False,Bauvill,MEMS Power Generation,changed
+Lincoln City,2021–22,2022–23,League One,League One,False,ROTATING (Virgin Wines / Light Source / Buildbase / University of Lincoln / Branston),Branston,excluded
+Lincoln City,2022–23,2023–24,League One,League One,False,Branston,Branston,same
+Lincoln City,2023–24,2024–25,League One,League One,False,Branston,Branston,same
+Lincoln City,2024–25,2025–26,League One,League One,False,Branston,Branston,same
+Milton Keynes Dons,2021–22,2022–23,League One,League One,False,Suzuki,Suzuki,same
+Milton Keynes Dons,2022–23,2023–24,League One,League Two,True,Suzuki,Suzuki,same
+Milton Keynes Dons,2023–24,2024–25,League Two,League Two,False,Suzuki,Suzuki,same
+Milton Keynes Dons,2024–25,2025–26,League Two,League Two,False,Suzuki,Suzuki,same
+Morecambe,2021–22,2022–23,League One,League One,False,Mazuma,Mazuma,same
+Morecambe,2022–23,2023–24,League One,League Two,True,Mazuma,Omnia,changed
+Morecambe,2023–24,2024–25,League Two,League Two,False,Omnia,The Fan Cave Memorabilia,changed
+Morecambe,2024–25,2025–26,League Two,National League,True,The Fan Cave Memorabilia,LBD Modular Systems,changed
+Shrewsbury Town,2021–22,2022–23,League One,League One,False,Tuffins Supermarkets,Tuffins Supermarkets,same
+Shrewsbury Town,2022–23,2023–24,League One,League One,False,Tuffins Supermarkets,Morris Property,changed
+Shrewsbury Town,2023–24,2024–25,League One,League One,False,Morris Property,Morris Property,same
+Shrewsbury Town,2024–25,2025–26,League One,League Two,True,Morris Property,Shropshire Homes,changed
+Wycombe Wanderers,2021–22,2022–23,League One,League One,False,Dreams,Dreams,same
+Wycombe Wanderers,2022–23,2023–24,League One,League One,False,Dreams,Origin Doors and Windows,changed
+Wycombe Wanderers,2023–24,2024–25,League One,League One,False,Origin Doors and Windows,Origin Doors and Windows,same
+Wycombe Wanderers,2024–25,2025–26,League One,League One,False,Origin Doors and Windows,Origin Doors and Windows,same
+Bristol Rovers,2021–22,2022–23,League Two,League One,True,Utilita,Utilita,same
+Bristol Rovers,2022–23,2023–24,League One,League One,False,Utilita,Utilita,same
+Bristol Rovers,2023–24,2024–25,League One,League One,False,Utilita,FanHub,changed
+Bristol Rovers,2024–25,2025–26,League One,League Two,True,FanHub,FanHub,same
+Exeter City,2021–22,2022–23,League Two,League One,True,Carpetright,Carpetright,same
+Exeter City,2022–23,2023–24,League One,League One,False,Carpetright,HEL Performance,changed
+Exeter City,2023–24,2024–25,League One,League One,False,HEL Performance,HEL Performance,same
+Exeter City,2024–25,2025–26,League One,League One,False,HEL Performance,HEL Performance,same
+Forest Green Rovers,2021–22,2022–23,League Two,League One,True,Ecotricity,Ecotricity,same
+Forest Green Rovers,2022–23,2023–24,League One,League Two,True,Ecotricity,Ecotricity,same
+Forest Green Rovers,2023–24,2024–25,League Two,National League,True,Ecotricity,Ecotricity,same
+Forest Green Rovers,2024–25,2025–26,National League,National League,False,Ecotricity,Ecotricity,same
+Port Vale,2021–22,2022–23,League Two,League One,True,Synectics Solutions,Synectics Solutions,same
+Port Vale,2022–23,2023–24,League One,League One,False,Synectics Solutions,Synectics Solutions,same
+Port Vale,2023–24,2024–25,League One,League Two,True,Synectics Solutions,Synectics Solutions,same
+Port Vale,2024–25,2025–26,League Two,League One,True,Synectics Solutions,NONE,excluded
+Carlisle United,2021–22,2022–23,League Two,League Two,False,Thomas Graham,Bimson Haulage,changed
+Carlisle United,2022–23,2023–24,League Two,League One,True,Bimson Haulage,Bimson Haulage,same
+Carlisle United,2023–24,2024–25,League One,League Two,True,Bimson Haulage,Aqua Pura,changed
+Carlisle United,2024–25,2025–26,League Two,National League,True,Aqua Pura,Aqua Pura,same
+Leyton Orient,2021–22,2022–23,League Two,League Two,False,ROTATING (multiple charities),ROTATING (multiple charities),excluded
+Leyton Orient,2022–23,2023–24,League Two,League One,True,ROTATING (multiple charities),Eastdil Secured,excluded
+Leyton Orient,2023–24,2024–25,League One,League One,False,Eastdil Secured,Eastdil Secured,same
+Leyton Orient,2024–25,2025–26,League One,League One,False,Eastdil Secured,Eastdil Secured,same
+Northampton Town,2021–22,2022–23,League Two,League Two,False,University of Northampton,University of Northampton,same
+Northampton Town,2022–23,2023–24,League Two,League One,True,University of Northampton,University of Northampton,same
+Northampton Town,2023–24,2024–25,League One,League One,False,University of Northampton,University of Northampton,same
+Northampton Town,2024–25,2025–26,League One,League One,False,University of Northampton,University of Northampton,same
+Stevenage,2021–22,2022–23,League Two,League Two,False,Prime Gaming,Prime Gaming,same
+Stevenage,2022–23,2023–24,League Two,League One,True,Prime Gaming,GRILLA,changed
+Stevenage,2023–24,2024–25,League One,League One,False,GRILLA,Xsolla,changed
+Stevenage,2024–25,2025–26,League One,League One,False,Xsolla,Xsolla,same
+Crawley Town,2021–22,2022–23,League Two,League Two,False,The People's Pension,The People's Pension,same
+Crawley Town,2022–23,2023–24,League Two,League Two,False,The People's Pension,The People's Pension,same
+Crawley Town,2023–24,2024–25,League Two,League One,True,The People's Pension,Rentokil Initial,changed
+Crawley Town,2024–25,2025–26,League One,League Two,True,Rentokil Initial,Rentokil Initial,same
+Mansfield Town,2021–22,2022–23,League Two,League Two,False,One Call Insurance,One Call Insurance,same
+Mansfield Town,2022–23,2023–24,League Two,League Two,False,One Call Insurance,One Call Insurance,same
+Mansfield Town,2023–24,2024–25,League Two,League One,True,One Call Insurance,One Call Insurance,same
+Mansfield Town,2024–25,2025–26,League One,League One,False,One Call Insurance,One Call Insurance,same
+Stockport County,2022–23,2023–24,League Two,League Two,False,VITA Group,VITA Group,same
+Stockport County,2023–24,2024–25,League Two,League One,True,VITA Group,VITA Group,same
+Stockport County,2024–25,2025–26,League One,League One,False,VITA Group,VITA Group,same
+Bradford City,2021–22,2022–23,League Two,League Two,False,JCT600,JCT600,same
+Bradford City,2022–23,2023–24,League Two,League Two,False,JCT600,JCT600,same
+Bradford City,2023–24,2024–25,League Two,League Two,False,JCT600,JCT600,same
+Bradford City,2024–25,2025–26,League Two,League One,True,JCT600,JCT600,same
+Barrow,2021–22,2022–23,League Two,League Two,False,JF Hornby & Co.,JF Hornby & Co.,same
+Barrow,2022–23,2023–24,League Two,League Two,False,JF Hornby & Co.,Terrace,changed
+Barrow,2023–24,2024–25,League Two,League Two,False,Terrace,Newfoundland and Labrador,changed
+Barrow,2024–25,2025–26,League Two,League Two,False,Newfoundland and Labrador,Newfoundland and Labrador,same
+Colchester United,2021–22,2022–23,League Two,League Two,False,Texo Scaffolding,Workhorse Group,changed
+Colchester United,2022–23,2023–24,League Two,League Two,False,Workhorse Group,Workhorse Group,same
+Colchester United,2023–24,2024–25,League Two,League Two,False,Workhorse Group,HotLizard,changed
+Colchester United,2024–25,2025–26,League Two,League Two,False,HotLizard,HotLizard,same
+Harrogate Town,2021–22,2022–23,League Two,League Two,False,Strata,Strata,same
+Harrogate Town,2022–23,2023–24,League Two,League Two,False,Strata,Strata,same
+Harrogate Town,2023–24,2024–25,League Two,League Two,False,Strata,EnviroVent,changed
+Harrogate Town,2024–25,2025–26,League Two,League Two,False,EnviroVent,EnviroVent,same
+Hartlepool United,2021–22,2022–23,League Two,League Two,False,Orangebox Training Solutions,Suit Direct,changed
+Hartlepool United,2022–23,2023–24,League Two,National League,True,Suit Direct,The Prestige Group,changed
+Hartlepool United,2023–24,2024–25,National League,National League,False,The Prestige Group,Workwear Express,changed
+Hartlepool United,2024–25,2025–26,National League,National League,False,Workwear Express,UNVERIFIED (Wikipedia: Utilita; Football Kit Archive: Prestige Care Group),excluded
+Newport County,2021–22,2022–23,League Two,League Two,False,Alzheimer's Society Cymru,Pure Vans,changed
+Newport County,2022–23,2023–24,League Two,League Two,False,Pure Vans,Pure Vans,same
+Newport County,2023–24,2024–25,League Two,League Two,False,Pure Vans,Pure Vans,same
+Newport County,2024–25,2025–26,League Two,League Two,False,Pure Vans,Pure Vans,same
+Oldham Athletic,2021–22,2022–23,League Two,National League,True,Bartercard,Bartercard,same
+Oldham Athletic,2022–23,2023–24,National League,National League,False,Bartercard,RRG Group,changed
+Oldham Athletic,2023–24,2024–25,National League,National League,False,RRG Group,RRG Group,same
+Oldham Athletic,2024–25,2025–26,National League,League Two,True,RRG Group,RRG Group,same
+Rochdale,2021–22,2022–23,League Two,League Two,False,Crown Oil,Crown Oil,same
+Rochdale,2022–23,2023–24,League Two,National League,True,Crown Oil,Crown Oil,same
+Rochdale,2023–24,2024–25,National League,National League,False,Crown Oil,Crown Oil,same
+Rochdale,2024–25,2025–26,National League,National League,False,Crown Oil,Crown Oil,same
+Salford City,2021–22,2022–23,League Two,League Two,False,TalkTalk,TalkTalk,same
+Salford City,2022–23,2023–24,League Two,League Two,False,TalkTalk,Salboy,changed
+Salford City,2023–24,2024–25,League Two,League Two,False,Salboy,Fireball Cinnamon Whisky,changed
+Salford City,2024–25,2025–26,League Two,League Two,False,Fireball Cinnamon Whisky,Fireball Cinnamon Whisky,same
+Scunthorpe United,2021–22,2022–23,League Two,National League,True,Cancer Research UK,Marshall BMW,changed
+Sutton United,2021–22,2022–23,League Two,League Two,False,Angel Plastics,Angel Plastics,same
+Sutton United,2022–23,2023–24,League Two,League Two,False,Angel Plastics,Echo Laser,changed
+Sutton United,2023–24,2024–25,League Two,National League,True,Echo Laser,Echo Laser,same
+Sutton United,2024–25,2025–26,National League,National League,False,Echo Laser,Echo Laser,same
+Swindon Town,2021–22,2022–23,League Two,League Two,False,Bartercard,First City Nursing and Care,changed
+Swindon Town,2022–23,2023–24,League Two,League Two,False,First City Nursing and Care,MiPermit,changed
+Swindon Town,2023–24,2024–25,League Two,League Two,False,MiPermit,MiPermit,same
+Swindon Town,2024–25,2025–26,League Two,League Two,False,MiPermit,MiPermit,same
+Tranmere Rovers,2021–22,2022–23,League Two,League Two,False,Essar,Essar,same
+Tranmere Rovers,2022–23,2023–24,League Two,League Two,False,Essar,Essar,same
+Tranmere Rovers,2023–24,2024–25,League Two,League Two,False,Essar,Essar,same
+Tranmere Rovers,2024–25,2025–26,League Two,League Two,False,Essar,Essar,same
+Walsall,2021–22,2022–23,League Two,League Two,False,HomeServe,Poundland,changed
+Walsall,2022–23,2023–24,League Two,League Two,False,Poundland,Poundland,same
+Walsall,2023–24,2024–25,League Two,League Two,False,Poundland,Poundland,same
+Walsall,2024–25,2025–26,League Two,League Two,False,Poundland,NoFo Brew Co,changed
+Grimsby Town,2022–23,2023–24,League Two,League Two,False,myenergi,myenergi,same
+Grimsby Town,2023–24,2024–25,League Two,League Two,False,myenergi,myenergi,same
+Grimsby Town,2024–25,2025–26,League Two,League Two,False,myenergi,myenergi,same
+Notts County,2022–23,2023–24,National League,League Two,True,Access Training,John Pye Auctions,changed
+Notts County,2023–24,2024–25,League Two,League Two,False,John Pye Auctions,John Pye Auctions,same
+Notts County,2024–25,2025–26,League Two,League Two,False,John Pye Auctions,John Pye Auctions,same
+Bromley,2022–23,2023–24,National League,National League,False,LSP Renewables,LSP Renewables,same
+Bromley,2023–24,2024–25,National League,League Two,True,LSP Renewables,LSP Renewables,same
+Bromley,2024–25,2025–26,League Two,League Two,False,LSP Renewables,LSP Renewables,same
+Chesterfield,2022–23,2023–24,National League,National League,False,Leengate Valves,Leengate Valves,same
+Chesterfield,2023–24,2024–25,National League,League Two,True,Leengate Valves,Leengate Valves,same
+Chesterfield,2024–25,2025–26,League Two,League Two,False,Leengate Valves,Leengate Valves,same
+Barnet,2022–23,2023–24,National League,National League,False,TIC Health,TIC Health,same
+Barnet,2023–24,2024–25,National League,National League,False,TIC Health,TIC Health,same
+Barnet,2024–25,2025–26,National League,League Two,True,TIC Health,TIC Health,same
+Aldershot Town,2022–23,2023–24,National League,National League,False,Bridges Estate Agents,Bridges Estate Agents,same
+Aldershot Town,2023–24,2024–25,National League,National League,False,Bridges Estate Agents,Bridges Estate Agents,same
+Aldershot Town,2024–25,2025–26,National League,National League,False,Bridges Estate Agents,Bridges Estate Agents,same
+Altrincham,2022–23,2023–24,National League,National League,False,J Davidson Ltd,J Davidson Ltd,same
+Altrincham,2023–24,2024–25,National League,National League,False,J Davidson Ltd,AO World,changed
+Altrincham,2024–25,2025–26,National League,National League,False,AO World,AO World,same
+Boreham Wood,2022–23,2023–24,National League,National League,False,Alan Swan - Wood Army,Alan Swan - Wood Army,same
+Dagenham & Redbridge,2022–23,2023–24,National League,National League,False,West & Coe,West & Coe,same
+Dagenham & Redbridge,2023–24,2024–25,National League,National League,False,West & Coe,West & Coe,same
+Dorking Wanderers,2022–23,2023–24,National League,National League,False,Stonegate Homes,Hex.com,changed
+Eastleigh,2022–23,2023–24,National League,National League,False,Utilita,Utilita,same
+Eastleigh,2023–24,2024–25,National League,National League,False,Utilita,Utilita,same
+Eastleigh,2024–25,2025–26,National League,National League,False,Utilita,Utilita,same
+FC Halifax Town,2022–23,2023–24,National League,National League,False,CORE Facility Services,Nuie,changed
+FC Halifax Town,2023–24,2024–25,National League,National League,False,Nuie,Nuie,same
+FC Halifax Town,2024–25,2025–26,National League,National League,False,Nuie,Nuie,same
+Gateshead,2022–23,2023–24,National League,National League,False,Gateshead Central,Gateshead Central,same
+Gateshead,2023–24,2024–25,National League,National League,False,Gateshead Central,Gateshead Central,same
+Gateshead,2024–25,2025–26,National League,National League,False,Gateshead Central,Gateshead Central,same
+Maidenhead United,2022–23,2023–24,National League,National League,False,G&L Scientific,CALM,changed
+Maidenhead United,2023–24,2024–25,National League,National League,False,CALM,CALM,same
+Solihull Moors,2022–23,2023–24,National League,National League,False,Taxbuddi,Taxbuddi,same
+Solihull Moors,2023–24,2024–25,National League,National League,False,Taxbuddi,Taxbuddi,same
+Solihull Moors,2024–25,2025–26,National League,National League,False,Taxbuddi,Taxbuddi,same
+Southend United,2022–23,2023–24,National League,National League,False,P G Site Services,Solopress,changed
+Southend United,2023–24,2024–25,National League,National League,False,Solopress,c2c,changed
+Southend United,2024–25,2025–26,National League,National League,False,c2c,c2c,same
+Wealdstone,2022–23,2023–24,National League,National League,False,GPF Lewis,GPF Lewis,same
+Wealdstone,2023–24,2024–25,National League,National League,False,GPF Lewis,Brunel University London,changed
+Wealdstone,2024–25,2025–26,National League,National League,False,Brunel University London,Brunel University London,same
+Woking,2022–23,2023–24,National League,National League,False,Boz's Fruit & Veg,Boz's Fruit & Veg,same
+Woking,2023–24,2024–25,National League,National League,False,Boz's Fruit & Veg,Boz's Fruit & Veg,same
+Woking,2024–25,2025–26,National League,National League,False,Boz's Fruit & Veg,Nuffield Health,changed
+Yeovil Town,2024–25,2025–26,National League,National League,False,Bradfords Building Supplies,Bradfords Building Supplies,same
+York City,2022–23,2023–24,National League,National League,False,JMP,Titan Wealth,changed
+York City,2023–24,2024–25,National League,National League,False,Titan Wealth,Titan Wealth,same
+York City,2024–25,2025–26,National League,National League,False,Titan Wealth,Titan Wealth,same
+AFC Fylde,2023–24,2024–25,National League,National League,False,FWP Architecture,FWP Architecture,same
+Ebbsfleet United,2023–24,2024–25,National League,National League,False,Virtue Clean Energy,Virtue Clean Energy,same
+Boston United,2024–25,2025–26,National League,National League,False,Kia,Kia,same
+Braintree Town,2024–25,2025–26,National League,National League,False,Andreas Carter Sports,Andreas Carter Sports,same
+Tamworth,2024–25,2025–26,National League,National League,False,Bradley Scott Windows,Bradley Scott Windows,same
+Arbroath,2022–23,2023–24,Scottish Championship,Scottish Championship,False,Megatech,Megatech,same
+Ayr United,2022–23,2023–24,Scottish Championship,Scottish Championship,False,Jewson,Jewson,same
+Ayr United,2023–24,2024–25,Scottish Championship,Scottish Championship,False,Jewson,Jewson,same
+Ayr United,2024–25,2025–26,Scottish Championship,Scottish Championship,False,Jewson,Jewson,same
+Greenock Morton,2022–23,2023–24,Scottish Championship,Scottish Championship,False,McGill's,Dalrada Technology,changed
+Greenock Morton,2023–24,2024–25,Scottish Championship,Scottish Championship,False,Dalrada Technology,Dalrada Technology,same
+Greenock Morton,2024–25,2025–26,Scottish Championship,Scottish Championship,False,Dalrada Technology,Dalrada Technology,same
+Inverness Caledonian Thistle,2022–23,2023–24,Scottish Championship,Scottish Championship,False,ILI Group,ILI Group,same
+Partick Thistle,2022–23,2023–24,Scottish Championship,Scottish Championship,False,Just Employment Law,Clydebuilt Home Improvements,changed
+Partick Thistle,2023–24,2024–25,Scottish Championship,Scottish Championship,False,Clydebuilt Home Improvements,Clydebuilt Home Improvements,same
+Partick Thistle,2024–25,2025–26,Scottish Championship,Scottish Championship,False,Clydebuilt Home Improvements,WrightKerr All Trades,changed
+Queen's Park,2022–23,2023–24,Scottish Championship,Scottish Championship,False,Scotts,City Facilities Management,changed
+Queen's Park,2023–24,2024–25,Scottish Championship,Scottish Championship,False,City Facilities Management,City Facilities Management,same
+Queen's Park,2024–25,2025–26,Scottish Championship,Scottish Championship,False,City Facilities Management,City Facilities Management,same
+Raith Rovers,2022–23,2023–24,Scottish Championship,Scottish Championship,False,Dean Park Hotel,Dean Park Hotel,same
+Raith Rovers,2023–24,2024–25,Scottish Championship,Scottish Championship,False,Dean Park Hotel,Dean Park Hotel,same
+Raith Rovers,2024–25,2025–26,Scottish Championship,Scottish Championship,False,Dean Park Hotel,Audio Emotion,changed
+Airdrieonians,2023–24,2024–25,Scottish Championship,Scottish Championship,False,Holemasters,Holemasters,same
+Airdrieonians,2024–25,2025–26,Scottish Championship,Scottish Championship,False,Holemasters,Holemasters,same
+Dunfermline Athletic,2023–24,2024–25,Scottish Championship,Scottish Championship,False,SRJ Windows,SRJ Windows,same
+Dunfermline Athletic,2024–25,2025–26,Scottish Championship,Scottish Championship,False,SRJ Windows,Gamdom,changed
